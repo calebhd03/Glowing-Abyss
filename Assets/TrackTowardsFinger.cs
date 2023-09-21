@@ -8,16 +8,16 @@ public class TrackTowardsFinger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //navMeshAgent= GetComponent<NavMeshAgent>();
+        navMeshAgent= GetComponent<NavMeshAgent>();
     }
 
-    /*public void OnTouchPosition(InputValue value)
+    public void OnTouchPosition(InputValue value)
     {
         Debug.Log("Value  = " + value);
         Debug.Log("value.Get<Vector2>()  = " + value.Get<Vector2>());
         navMeshAgent.destination = value.Get<Vector2>();
     }
-*/
+
     // Update is called once per frame
     void Update()
     {
