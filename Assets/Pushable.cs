@@ -9,6 +9,7 @@ public class Pushable : MonoBehaviour
     [SerializeField] bool multiplePushable;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
+    [SerializeField] Animation anim;
     GameObject player;
     bool playerInPushable;
     bool canBePushed = true;
@@ -24,11 +25,11 @@ public class Pushable : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             player = other.gameObject;
-            CheckPushing();
+            CheckAction();
         }
     }
 
-    private void CheckPushing()
+    private void CheckAction()
     {
         if(!canBePushed)
             return;
@@ -37,6 +38,8 @@ public class Pushable : MonoBehaviour
         {
             StartPushing();
         }
+
+        //Replace with event system
     }
 
     public void StartPushing()
@@ -46,6 +49,8 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         animator.SetTrigger("Push");
+        //anim.Play();
+        //GetComponent<Animation>().Play();
     }
 
     public void StopPushing()
