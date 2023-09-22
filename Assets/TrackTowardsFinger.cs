@@ -16,11 +16,9 @@ public class TrackTowardsFinger : MonoBehaviour
 
     public void OnTouchPosition(InputValue value)
     {
-        Debug.Log("Value  = " + value);
-        Debug.Log("value.Get<Vector2>()  = " + value.Get<Vector2>()); 
         Vector2 pos = value.Get<Vector2>();
         Vector3 dest = cam.ScreenToWorldPoint(new Vector3(pos.x, pos.y, cam.nearClipPlane));
-        Debug.Log("dest  = " + dest);
+        
         navMeshAgent.destination = dest;
     }
 

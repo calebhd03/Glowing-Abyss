@@ -8,12 +8,13 @@ public class FocusingTarget : MonoBehaviour
     [SerializeField] float pullingStrength = 1.0f;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList= new List<PlanktonTracking>();
 
+    public Transform targetingPoint;
     CircleCollider2D playerCol;
     // Start is called before the first frame update
     void Start()
     {
         playerCol = GetComponent<CircleCollider2D>();
-
+        targetingPoint = transform;
         //Find plankton already sitting in circle
         Collider2D[] ret = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), playerCol.radius);
         foreach(Collider2D c in ret)
@@ -31,7 +32,7 @@ public class FocusingTarget : MonoBehaviour
     {
         foreach(PlanktonTracking p in planktonTrackingsList)
         {
-            p.MoveTowards(transform.position, pullingStrength);
+            p.MoveTowards(targetingPoint.position, pullingStrength);
         }
     }
 
@@ -51,5 +52,10 @@ public class FocusingTarget : MonoBehaviour
     {
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
+    }
+
+    public int planktonAmount()
+    {
+        return planktonTrackingsList.Count;
     }
 }

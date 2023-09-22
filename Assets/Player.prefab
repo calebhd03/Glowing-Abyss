@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 315301502515870209}
   - component: {fileID: 1921750339352011864}
   - component: {fileID: 6796482367712428673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Plankton
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 3650293712186516808}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &4918288781399483298
 CircleCollider2D:
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pullingStrength: 0.11
   planktonTrackingsList: []
+  targetingPoint: {fileID: 0}
 --- !u!114 &1921750339352011864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3650293712186516808}
   - component: {fileID: 6552371938881445368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Following Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
