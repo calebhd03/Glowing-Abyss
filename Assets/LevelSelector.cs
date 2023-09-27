@@ -15,6 +15,7 @@ public class LevelSelector : MonoBehaviour
     {
         //disabled locked levels
         int LevelReached = PlayerPrefs.GetInt("levelReached", 1);
+        Debug.Log("Level reached : " + LevelReached);
         for (int i = LevelReached; i < levelButtons.Length; i++)
         {
             levelButtons[i].interactable = false;
