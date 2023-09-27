@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using UnityEngine.Events;
 using UnityEngine;
+using System;
 
 public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList= new List<PlanktonTracking>();
+    public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
     CircleCollider2D playerCol;
@@ -52,6 +54,8 @@ public class FocusingTarget : MonoBehaviour
     {
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
+
+        m_MyEvent?.Invoke();
     }
 
     public int planktonAmount()
