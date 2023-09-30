@@ -17,7 +17,7 @@ public class Pushable : MonoBehaviour
 
     private void Start() {
         animator = GetComponent<Animator>();
-        text.text = requiredPlankton.ToString();
+        if(text!= null ) text.text = requiredPlankton.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
