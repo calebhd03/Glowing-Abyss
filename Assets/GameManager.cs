@@ -17,6 +17,14 @@ public class GameManager : MonoBehaviour
             WinLevel();
     }
 
+
+    public void LooseLevel()
+    {
+        Debug.LogWarning("Level Lost!");
+
+        //TODO: Scene Fader
+        SceneManager.LoadScene(0);
+    }
     public void WinLevel()
     {
         Debug.LogWarning("Level Won!");
