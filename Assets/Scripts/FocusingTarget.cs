@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
+    [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList= new List<PlanktonTracking>();
     public UnityEvent m_MyEvent;
 
@@ -55,7 +57,7 @@ public class FocusingTarget : MonoBehaviour
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
 
-        m_MyEvent?.Invoke();
+        if(counterText != null) counterText.text = planktonAmount().ToString();
     }
 
     public int planktonAmount()
