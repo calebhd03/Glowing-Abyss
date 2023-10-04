@@ -3,5 +3,13 @@ using UnityEngine;
 public class LevelRequirements : ScriptableObject
 {
     public int levelNumber;
+    public WinCondition winCondition = new WinCondition();
     public int requiredPlankton;
+
+}
+public enum WinCondition
+{
+    FinalPlantLit,
+    AllPlantsLit,
+    RequiredPlanktonNumber,
 }

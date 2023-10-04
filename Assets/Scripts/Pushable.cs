@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class Pushable : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class Pushable : MonoBehaviour
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
     [SerializeField] Animation anim;
+    [HideInInspector] public GameManager gameManager;
+
     GameObject player;
     bool playerInPushable;
     bool canBePushed = true;
@@ -49,6 +53,8 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         animator.SetTrigger("Push");
+        gameManager.Pushed(this.gameObject);
+
         //anim.Play();
         //GetComponent<Animation>().Play();
     }
