@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -173,7 +173,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GA_largerocks_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2340
+        width: 2885
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f03a7201b221d4fb65e109b6edc9e7
+      internalID: -1850214580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_largerocks_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1621
+        width: 2831
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b4c80f722ce0441b0bccb970d1aaa0
+      internalID: -606656331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_largerocks_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 856
+        width: 2716
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a86af55d6d833f46ad0328b61bdbcbc
+      internalID: -831956958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_largerocks_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 37
+        width: 2826
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04abe45f68d251045ba5d3851985096f
+      internalID: 1558357614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +268,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GA_largerocks_0: -1850214580
+      GA_largerocks_1: -606656331
+      GA_largerocks_2: -831956958
+      GA_largerocks_3: 1558357614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

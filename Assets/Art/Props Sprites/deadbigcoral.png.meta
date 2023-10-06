@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c990aeac1511f144a0cc23d26a19a4e
+guid: cacd688629c8e8f499f3a2704aa783af
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -158,127 +158,9 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: GA_spikyrocks_0
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 1705
-        width: 539
-        height: 1238
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ad02bb7301c8e04aab5322e66348f73
-      internalID: -1451253599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GA_spikyrocks_1
-      rect:
-        serializedVersion: 2
-        x: 855
-        y: 1685
-        width: 576
-        height: 1250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 813002a4fcc7d2b42b802df71af3a6f4
-      internalID: -518265276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GA_spikyrocks_2
-      rect:
-        serializedVersion: 2
-        x: 1608
-        y: 565
-        width: 603
-        height: 2395
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f3362069a5c93a4b850eb3f0ad4b50a
-      internalID: 653636544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GA_spikyrocks_3
-      rect:
-        serializedVersion: 2
-        x: 2346
-        y: 45
-        width: 587
-        height: 2656
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf4201da017b1004aaffea4f6c798b16
-      internalID: -1349948664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GA_spikyrocks_4
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 49
-        width: 1388
-        height: 1308
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80559a752a8e9674c9372e11678ba693
-      internalID: 1629005104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -289,12 +171,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      GA_spikyrocks_0: -1451253599
-      GA_spikyrocks_1: -518265276
-      GA_spikyrocks_2: 653636544
-      GA_spikyrocks_3: -1349948664
-      GA_spikyrocks_4: 1629005104
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

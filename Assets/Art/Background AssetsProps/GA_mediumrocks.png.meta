@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -173,7 +173,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GA_mediumrocks_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2090
+        width: 1408
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c11c61e39c71d469582f9414be4b55
+      internalID: -366515026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_mediumrocks_1
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2084
+        width: 1267
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8ffa8d10e5cfa4b969d06d56f33b0a
+      internalID: -403412497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_mediumrocks_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1124
+        width: 1414
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1c4767079a0d749a8e9eb31ea04694
+      internalID: -927981481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_mediumrocks_3
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1133
+        width: 1319
+        height: 793
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f991b62f54125429d1f7e1954fd8d7
+      internalID: 5097284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_mediumrocks_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 49
+        width: 1375
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaec68ca22cfdb47a5566848cf6e3e8
+      internalID: 819495805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GA_mediumrocks_5
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 24
+        width: 1308
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8db7236db9fe1448da7bfbab70f591
+      internalID: -1143894263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -184,7 +310,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GA_mediumrocks_0: -366515026
+      GA_mediumrocks_1: -403412497
+      GA_mediumrocks_2: -927981481
+      GA_mediumrocks_3: 5097284
+      GA_mediumrocks_4: 819495805
+      GA_mediumrocks_5: -1143894263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
