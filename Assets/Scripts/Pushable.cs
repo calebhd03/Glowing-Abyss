@@ -7,6 +7,7 @@ public class Pushable : MonoBehaviour
 {
     [SerializeField] int requiredPlankton;
     [SerializeField] bool multiplePushable;
+    [SerializeField] bool stopPlayerMovement;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
     [SerializeField] UnityEvent AfterPushed;
@@ -49,7 +50,9 @@ public class Pushable : MonoBehaviour
         Debug.Log("Start Pushing : " + this.gameObject.name);
 
         canBePushed = false;
+
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
+        if (stopPlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
         animator.SetTrigger("Push");
     }
 
@@ -60,6 +63,7 @@ public class Pushable : MonoBehaviour
         if (multiplePushable) canBePushed = true;
 
         player.GetComponent<FocusingTarget>().targetingPoint = player.transform;
+        if (stopPlayerMovement) player.GetComponent<TrackTowardsFinger>().StartMoving();
 
         //Test gameManager win conditions
         if (gameManager != null) gameManager.Pushed(this);

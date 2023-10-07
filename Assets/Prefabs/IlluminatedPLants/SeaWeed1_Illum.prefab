@@ -369,9 +369,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 1
   text: {fileID: 6039039528187716793}
   spriteT: {fileID: 78582873512142730}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &2782134382405688836
 Animator:
   serializedVersion: 5
@@ -423,7 +427,7 @@ Transform:
   m_Children:
   - {fileID: 7651453386019488656}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9164963106928509101
 GameObject:
@@ -686,6 +690,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 78582873512142730}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}

@@ -10,7 +10,7 @@ public class TrackTowardsFinger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        navMeshAgent= GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         cam = Camera.main;
     }
 
@@ -18,8 +18,17 @@ public class TrackTowardsFinger : MonoBehaviour
     {
         Vector2 pos = value.Get<Vector2>();
         Vector3 dest = cam.ScreenToWorldPoint(new Vector3(pos.x, pos.y, cam.nearClipPlane));
-        
+
         navMeshAgent.destination = dest;
+    }
+
+    public void StopMoving()
+    {
+        navMeshAgent.isStopped = true;
+    }
+    public void StartMoving()
+    {
+        navMeshAgent.isStopped = false;
     }
 
     // Update is called once per frame
