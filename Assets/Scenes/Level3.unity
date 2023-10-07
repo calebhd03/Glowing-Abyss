@@ -5919,6 +5919,34 @@ PrefabInstance:
       propertyPath: requiredPlankton
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1740889586}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471069145615184368, guid: 6466dfad42db249f1a4af1df10d1499f, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
