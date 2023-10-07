@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
 public class Pushable : MonoBehaviour
@@ -11,12 +9,10 @@ public class Pushable : MonoBehaviour
     [SerializeField] bool multiplePushable;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
-    [SerializeField] Animation anim;
     [SerializeField] UnityEvent AfterPushed;
     [HideInInspector] public GameManager gameManager;
 
     GameObject player;
-    bool playerInPushable;
     bool canBePushed = true;
     Animator animator;
 
@@ -53,7 +49,6 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         animator.SetTrigger("Push");
-        gameManager.Pushed(this);
     }
 
     public void StopPushing()
@@ -64,6 +59,8 @@ public class Pushable : MonoBehaviour
 
         player.GetComponent<FocusingTarget>().targetingPoint = player.transform;
 
+        //Test gameManager win conditions
+        if (gameManager != null) gameManager.Pushed(this);
         if (AfterPushed != null) AfterPushed.Invoke();
     }
     public void StopAfterSec(float time)

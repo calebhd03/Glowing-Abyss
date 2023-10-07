@@ -10,6 +10,7 @@ public class FocusingTarget : MonoBehaviour
     [SerializeField] float pullingStrength = 1.0f;
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList= new List<PlanktonTracking>();
+    [HideInInspector] public GameManager gameManager;
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
@@ -58,6 +59,7 @@ public class FocusingTarget : MonoBehaviour
         planktonTrackingsList.Add(pt);
 
         if(counterText != null) counterText.text = planktonAmount().ToString();
+        if(gameManager != null) gameManager.TestWin();
     }
 
     public int planktonAmount()

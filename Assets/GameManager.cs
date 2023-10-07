@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -13,25 +14,24 @@ public class GameManager : MonoBehaviour
     public FocusingTarget playerTracking;
     public GameObject IllumParentObj;
 
-    List<illum> illums = new List<illum>();
+    [SerializeField] List<Pushable> allPlants = new List<Pushable>();
+    [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
     public void Start()
     {
         Pushable[] illumList = IllumParentObj.GetComponentsInChildren<Pushable>();
-        foreach (Pushable i in illumList)
-        {
-            illum tmp = new illum();
-            tmp.illumObj = i;
-            tmp.lit = false;
-            illums.Add(tmp);
-        }
-    }
+        allPlants = illumList.ToList<Pushable>();
+        Debug.Log(allPlants.Count);
 
-    struct illum
-    {
-        public Pushable illumObj;
-        public bool lit;
-    };
+        foreach (Pushable i in allPlants)
+        {
+            //set gameManager in illum
+            i.gameManager= this;
+
+        }
+        //set player gamaeManager
+        playerTracking.gameManager = this;
+    }
 
     public void TestWin()
     {
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
         if (cond == WinCondition.FinalPlantLit)
         {
-
+            //Done through a Unity Event on the final plant
         }
         else if (cond == WinCondition.RequiredPlanktonNumber)
         {
@@ -48,25 +48,21 @@ public class GameManager : MonoBehaviour
         }
         else if (cond == WinCondition.AllPlantsLit)
         {
-             for(int i=0; i<illums.Count; i++)
-             {
-                if (illums[i].lit == false)
-                    break;
-             }
-             WinLevel();
+            for (int i = 0; i < illuminatedPlants.Count; i++)
+            {
+                Debug.Log(i + " is " + illuminatedPlants);
+            }
+
+            if(illuminatedPlants.Count >= allPlants.Count)
+                WinLevel();
         }
     }
 
     public void Pushed(Pushable pushed)
     {
-        for(int i = 0; i<illums.Count; i++)
-        {
-            illum ill = illums[i];
-            if (ill.illumObj == pushed)
-            {
-                ill.lit = true;
-            }
-        }
+        if(!illuminatedPlants.Contains(pushed))
+            illuminatedPlants.Add(pushed);
+
         TestWin();
     }
 
