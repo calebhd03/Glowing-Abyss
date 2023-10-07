@@ -6316,9 +6316,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 494384617}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!1 &501261453
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,9 +10291,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 685860579}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &685860582
 Animator:
   serializedVersion: 5
@@ -20357,11 +20365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.585941
+      value: -34.35415
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -120.25067
+      value: -120.23481
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21340,9 +21348,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1443596484}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1443596487
 Animator:
   serializedVersion: 5
@@ -23992,9 +24004,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1648347744}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1648347747
 Animator:
   serializedVersion: 5
@@ -24290,13 +24306,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
+      propertyPath: IllumParentObj
+      value: 
+      objectReference: {fileID: 736608798}
+    - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
       propertyPath: playerTracking
       value: 
       objectReference: {fileID: 1693282908}
     - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
       propertyPath: levelRequirements
       value: 
-      objectReference: {fileID: 11400000, guid: d72667ea6e71d0f439568e2c280a6573, type: 2}
+      objectReference: {fileID: 11400000, guid: 02d178c13eb4be941940cdb1e700743d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26995,9 +27015,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1979595406}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1979595409
 Animator:
   serializedVersion: 5
@@ -29756,6 +29780,34 @@ PrefabInstance:
     - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: requiredPlankton
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1740889586}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1656433479844457749, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: m_RootOrder
