@@ -9,7 +9,8 @@ public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
     [SerializeField] TextMeshProUGUI counterText;
-    [SerializeField] List<PlanktonTracking> planktonTrackingsList= new List<PlanktonTracking>();
+    [SerializeField] List<PlanktonTracking> planktonTrackingsList = new List<PlanktonTracking>();
+    [HideInInspector] public GameManager gameManager;
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
@@ -21,7 +22,7 @@ public class FocusingTarget : MonoBehaviour
         targetingPoint = transform;
         //Find plankton already sitting in circle
         Collider2D[] ret = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), playerCol.radius);
-        foreach(Collider2D c in ret)
+        foreach (Collider2D c in ret)
         {
             PlanktonTracking pt = c.gameObject.GetComponent<PlanktonTracking>();
             if (pt != null)
@@ -34,7 +35,7 @@ public class FocusingTarget : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        foreach(PlanktonTracking p in planktonTrackingsList)
+        foreach (PlanktonTracking p in planktonTrackingsList)
         {
             p.MoveTowards(targetingPoint.position, pullingStrength);
         }
@@ -57,7 +58,8 @@ public class FocusingTarget : MonoBehaviour
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
 
-        if(counterText != null) counterText.text = planktonAmount().ToString();
+        if (counterText != null) counterText.text = planktonAmount().ToString();
+        if (gameManager != null) gameManager.TestWin();
     }
 
     public int planktonAmount()

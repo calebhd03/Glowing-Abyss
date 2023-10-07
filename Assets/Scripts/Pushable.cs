@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class Pushable : MonoBehaviour
 {
@@ -9,20 +9,23 @@ public class Pushable : MonoBehaviour
     [SerializeField] bool multiplePushable;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
-    [SerializeField] Animation anim;
+    [SerializeField] UnityEvent AfterPushed;
+    [HideInInspector] public GameManager gameManager;
+
     GameObject player;
-    bool playerInPushable;
     bool canBePushed = true;
     Animator animator;
 
-    private void Start() {
+    private void Start()
+    {
         animator = GetComponent<Animator>();
-        if(text!= null ) text.text = requiredPlankton.ToString();
+        if (text != null) text.text = requiredPlankton.ToString();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
 
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             player = other.gameObject;
             CheckAction();
@@ -31,15 +34,14 @@ public class Pushable : MonoBehaviour
 
     private void CheckAction()
     {
-        if(!canBePushed)
+        if (!canBePushed)
             return;
+
         Debug.Log("checking push with " + player.GetComponent<FocusingTarget>().planktonAmount() + " plankton");
-        if(player.GetComponent<FocusingTarget>().planktonAmount() >= requiredPlankton)
+        if (player.GetComponent<FocusingTarget>().planktonAmount() >= requiredPlankton)
         {
             StartPushing();
         }
-
-        //Replace with event system
     }
 
     public void StartPushing()
@@ -49,18 +51,19 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         animator.SetTrigger("Push");
-        //anim.Play();
-        //GetComponent<Animation>().Play();
     }
 
     public void StopPushing()
     {
         Debug.Log("Stop Pushing : " + this.gameObject.name);
 
-        if(multiplePushable)
-            canBePushed = true;
+        if (multiplePushable) canBePushed = true;
 
         player.GetComponent<FocusingTarget>().targetingPoint = player.transform;
+
+        //Test gameManager win conditions
+        if (gameManager != null) gameManager.Pushed(this);
+        if (AfterPushed != null) AfterPushed.Invoke();
     }
     public void StopAfterSec(float time)
     {
