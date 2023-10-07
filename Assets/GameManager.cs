@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
             illums.Add(tmp);
         }
     }
+
     struct illum
     {
         public Pushable illumObj;
@@ -45,16 +46,28 @@ public class GameManager : MonoBehaviour
             if (playerTracking.planktonAmount() >= levelRequirements.requiredPlankton)
                 WinLevel();
         }
-        else if (cond == WinCondition.RequiredPlanktonNumber)
+        else if (cond == WinCondition.AllPlantsLit)
         {
-             
+             for(int i=0; i<illums.Count; i++)
+             {
+                if (illums[i].lit == false)
+                    break;
+             }
+             WinLevel();
         }
     }
 
-    public void Pushed(GameObject pushedOBJ)
+    public void Pushed(Pushable pushed)
     {
-        illums.IndexOf()
-        if()
+        for(int i = 0; i<illums.Count; i++)
+        {
+            illum ill = illums[i];
+            if (ill.illumObj == pushed)
+            {
+                ill.lit = true;
+            }
+        }
+        TestWin();
     }
 
     public void LooseLevel()
@@ -64,6 +77,7 @@ public class GameManager : MonoBehaviour
         //TODO: Scene Fader
         SceneManager.LoadScene(0);
     }
+
     public void WinLevel()
     {
         Debug.LogWarning("Level Won!");

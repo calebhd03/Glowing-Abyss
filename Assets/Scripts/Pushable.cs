@@ -12,6 +12,7 @@ public class Pushable : MonoBehaviour
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
     [SerializeField] Animation anim;
+    [SerializeField] UnityEvent AfterPushed;
     [HideInInspector] public GameManager gameManager;
 
     GameObject player;
@@ -37,13 +38,12 @@ public class Pushable : MonoBehaviour
     {
         if(!canBePushed)
             return;
+
         Debug.Log("checking push with " + player.GetComponent<FocusingTarget>().planktonAmount() + " plankton");
         if(player.GetComponent<FocusingTarget>().planktonAmount() >= requiredPlankton)
         {
             StartPushing();
         }
-
-        //Replace with event system
     }
 
     public void StartPushing()
@@ -53,20 +53,18 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         animator.SetTrigger("Push");
-        gameManager.Pushed(this.gameObject);
-
-        //anim.Play();
-        //GetComponent<Animation>().Play();
+        gameManager.Pushed(this);
     }
 
     public void StopPushing()
     {
         Debug.Log("Stop Pushing : " + this.gameObject.name);
 
-        if(multiplePushable)
-            canBePushed = true;
+        if(multiplePushable) canBePushed = true;
 
         player.GetComponent<FocusingTarget>().targetingPoint = player.transform;
+
+        if (AfterPushed != null) AfterPushed.Invoke();
     }
     public void StopAfterSec(float time)
     {
