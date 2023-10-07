@@ -3168,7 +3168,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 494384617}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!1 &501261453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4323,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 685860579}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &685860582
 Animator:
   serializedVersion: 5
@@ -8668,7 +8674,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 1291795805}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1291795808
 Animator:
   serializedVersion: 5
@@ -9082,11 +9091,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.505222
+      value: -32.277405
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -120.66452
+      value: -120.65053
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9564,7 +9573,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 1443596484}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1443596487
 Animator:
   serializedVersion: 5
@@ -10401,7 +10413,7 @@ PrefabInstance:
     - target: {fileID: 868886638124786350, guid: 1ba0488e5e83d72419c0bc142369a111, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: e0489e4212a55a0409372a14da3de2fc, type: 2}
+      objectReference: {fileID: 23800000, guid: 13e54c6d1e5313f408dca333148574b4, type: 2}
     - target: {fileID: 3178740052071896177, guid: 1ba0488e5e83d72419c0bc142369a111, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11214,7 +11226,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 1648347744}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1648347747
 Animator:
   serializedVersion: 5
@@ -11425,6 +11440,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
+      propertyPath: IllumParentObj
+      value: 
+      objectReference: {fileID: 736608798}
     - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
       propertyPath: playerTracking
       value: 
@@ -11699,7 +11718,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 1762616153}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1762616156
 Animator:
   serializedVersion: 5
@@ -12781,7 +12803,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 0}
   spriteT: {fileID: 1979595406}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1979595409
 Animator:
   serializedVersion: 5
@@ -14066,6 +14091,10 @@ PrefabInstance:
     - target: {fileID: 6261519598921282632, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969766584263663437, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

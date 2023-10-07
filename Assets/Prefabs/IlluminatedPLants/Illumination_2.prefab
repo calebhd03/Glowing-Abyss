@@ -268,7 +268,7 @@ Transform:
   m_Children:
   - {fileID: 4920729944512245767}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4526285215183531336
 GameObject:
@@ -506,7 +506,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 1475410451713879485}
   spriteT: {fileID: 1557411914723260806}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &8396720442942984315
 Animator:
   serializedVersion: 5
@@ -621,7 +624,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8329453828230783280}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

@@ -93,7 +93,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154165742241122186}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -516,7 +516,10 @@ MonoBehaviour:
   multiplePushable: 0
   text: {fileID: 626974382801989251}
   spriteT: {fileID: 1921238650285222285}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &3317555513766115856
 Animator:
   serializedVersion: 5
