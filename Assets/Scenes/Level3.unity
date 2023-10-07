@@ -3739,9 +3739,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 494384617}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!4 &499701967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3566219174263691696, guid: 63881287d3e8d2948806acc246628d6f, type: 3}
@@ -10002,11 +10006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.30407
+      value: -32.072296
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -80.04418
+      value: -80.030205
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11013,9 +11017,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1443596484}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1443596487
 Animator:
   serializedVersion: 5
@@ -12409,9 +12417,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1648347744}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1648347747
 Animator:
   serializedVersion: 5
@@ -12946,13 +12958,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
+      propertyPath: IllumParentObj
+      value: 
+      objectReference: {fileID: 736608798}
+    - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
       propertyPath: playerTracking
       value: 
       objectReference: {fileID: 1693282908}
     - target: {fileID: 7272090175182975448, guid: 87a9ea61cc3fc1d41a0fd49b499b50ec, type: 3}
       propertyPath: levelRequirements
       value: 
-      objectReference: {fileID: 11400000, guid: d72667ea6e71d0f439568e2c280a6573, type: 2}
+      objectReference: {fileID: 11400000, guid: f6fbd5c27f6af654f950a109651db0e6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13376,9 +13392,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1762616153}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1762616156
 Animator:
   serializedVersion: 5
@@ -15218,9 +15238,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  stopPlayerMovement: 0
   text: {fileID: 0}
   spriteT: {fileID: 1979595406}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &1979595409
 Animator:
   serializedVersion: 5
