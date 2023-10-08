@@ -7,7 +7,9 @@ public class Pushable : MonoBehaviour
 {
     [SerializeField] int requiredPlankton;
     [SerializeField] bool multiplePushable;
-    [SerializeField] bool stopPlayerMovement;
+    [SerializeField] bool pausePlayerMovement = true;
+    [SerializeField] Animator animatorSp;
+    [SerializeField] Animator animatorLi;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
     [SerializeField] UnityEvent AfterPushed;
@@ -15,11 +17,9 @@ public class Pushable : MonoBehaviour
 
     GameObject player;
     bool canBePushed = true;
-    Animator animator;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
         if (text != null) text.text = requiredPlankton.ToString();
     }
 
@@ -52,8 +52,9 @@ public class Pushable : MonoBehaviour
         canBePushed = false;
 
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
-        if (stopPlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
-        animator.SetTrigger("Push");
+        if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
+        animatorSp.SetTrigger("Push");
+        if(animatorLi != null) animatorLi.SetTrigger("Push");
     }
 
     public void StopPushing()
@@ -63,7 +64,7 @@ public class Pushable : MonoBehaviour
         if (multiplePushable) canBePushed = true;
 
         player.GetComponent<FocusingTarget>().targetingPoint = player.transform;
-        if (stopPlayerMovement) player.GetComponent<TrackTowardsFinger>().StartMoving();
+        if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StartMoving();
 
         //Test gameManager win conditions
         if (gameManager != null) gameManager.Pushed(this);

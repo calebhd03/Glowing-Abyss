@@ -151,7 +151,7 @@ Transform:
   m_Children:
   - {fileID: 5145761888507431869}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2933266554631680249
 GameObject:
@@ -514,7 +514,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 15
   multiplePushable: 0
-  stopPlayerMovement: 1
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 3317555513766115856}
+  animatorLi: {fileID: 0}
   text: {fileID: 626974382801989251}
   spriteT: {fileID: 1921238650285222285}
   AfterPushed:

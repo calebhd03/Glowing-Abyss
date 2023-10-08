@@ -123,9 +123,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 7022876722466829908}
+  animatorLi: {fileID: 4333907063395104212}
   text: {fileID: 6140373050839998273}
   spriteT: {fileID: 7251864389593914740}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &4333907063395104212
 Animator:
   serializedVersion: 5
@@ -160,7 +166,6 @@ GameObject:
   - component: {fileID: 5801844479398550193}
   - component: {fileID: 4423054797469098501}
   - component: {fileID: 7022876722466829908}
-  - component: {fileID: 5443769592338779315}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -278,7 +283,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302913931447339949}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -327,23 +332,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5443769592338779315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302913931447339949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141eb65ad4d6e484180c092b722d7ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredPlankton: 1
-  multiplePushable: 0
-  text: {fileID: 0}
-  spriteT: {fileID: 7251864389593914740}
-  anim: {fileID: 0}
 --- !u!1 &4777874459269492916
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +362,7 @@ Transform:
   m_Children:
   - {fileID: 3280817026137304395}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 87.626}
 --- !u!1 &6494164552590213472
 GameObject:

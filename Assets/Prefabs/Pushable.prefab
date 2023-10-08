@@ -207,8 +207,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 15
   multiplePushable: 0
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 860163893494169839}
+  animatorLi: {fileID: 0}
   text: {fileID: 2324001362417246301}
   spriteT: {fileID: 1773518192758587551}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &860163893494169839
 Animator:
   serializedVersion: 5
