@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public FocusingTarget playerTracking;
     public GameObject IllumParentObj;
 
+    [SerializeField] GameObject winningUI;
     [SerializeField] List<Pushable> allPlants = new List<Pushable>();
     [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
@@ -81,7 +82,8 @@ public class GameManager : MonoBehaviour
         if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
             PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
 
+        winningUI.SetActive(true);
+
         //TODO: Scene Fader
-        SceneManager.LoadScene(0);
     }
 }

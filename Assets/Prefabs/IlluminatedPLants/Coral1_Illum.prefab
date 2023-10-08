@@ -155,7 +155,6 @@ GameObject:
   - component: {fileID: 8415314063395780583}
   - component: {fileID: 1263498236804679509}
   - component: {fileID: 1812588336743948001}
-  - component: {fileID: 7339873226057365589}
   - component: {fileID: 6199579142338101597}
   m_Layer: 8
   m_Name: Sprite
@@ -288,23 +287,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7339873226057365589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2550020505804223850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141eb65ad4d6e484180c092b722d7ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredPlankton: 1
-  multiplePushable: 0
-  text: {fileID: 0}
-  spriteT: {fileID: 7960349454557377176}
-  anim: {fileID: 0}
 --- !u!61 &6199579142338101597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -312,7 +294,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2550020505804223850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -711,9 +693,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 1812588336743948001}
+  animatorLi: {fileID: 4084204005311899040}
   text: {fileID: 251987819083723211}
   spriteT: {fileID: 7960349454557377176}
-  anim: {fileID: 0}
+  AfterPushed:
+    m_PersistentCalls:
+      m_Calls: []
+  gameManager: {fileID: 0}
 --- !u!95 &4084204005311899040
 Animator:
   serializedVersion: 5

@@ -369,7 +369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
-  stopPlayerMovement: 1
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 7402221279782329624}
+  animatorLi: {fileID: 2782134382405688836}
   text: {fileID: 6039039528187716793}
   spriteT: {fileID: 78582873512142730}
   AfterPushed:
@@ -627,7 +629,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9219064004876480813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -690,7 +692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredPlankton: 1
   multiplePushable: 0
-  stopPlayerMovement: 0
+  pausePlayerMovement: 1
+  animatorSp: {fileID: 0}
+  animatorLi: {fileID: 0}
   text: {fileID: 0}
   spriteT: {fileID: 78582873512142730}
   AfterPushed:
