@@ -1301,15 +1301,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.62097293
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.9061135
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.34037676
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.03546475
       objectReference: {fileID: 0}
     - target: {fileID: 8540705573212168004, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: requiredPlankton
@@ -15061,8 +15065,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007689081}
   m_LocalRotation: {x: -0, y: -0, z: 0.4364615, w: 0.899723}
-  m_LocalPosition: {x: 29.113277, y: -25.045341, z: -0.21935087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 29.8, y: -23.55, z: -0.21935087}
+  m_LocalScale: {x: 0.5454, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1967665404}
@@ -20246,11 +20250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.538406
+      value: -31.585941
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -120.21657
+      value: -120.25067
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20951,15 +20955,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.66417646
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.7799717
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.31530803
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06951995
       objectReference: {fileID: 0}
     - target: {fileID: 8540705573212168004, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: requiredPlankton
@@ -26840,15 +26848,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.5832341
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.8939973
       objectReference: {fileID: 0}
     - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.35847235
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897500841385401845, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.020170689
       objectReference: {fileID: 0}
     - target: {fileID: 8540705573212168004, guid: 39d9b544c1c23475e813a8fca0ba3f5e, type: 3}
       propertyPath: requiredPlankton
@@ -29150,6 +29162,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 475614346}
     m_Modifications:
+    - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6327104
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8069283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.37334517
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.09653588
+      objectReference: {fileID: 0}
     - target: {fileID: 2456117420269365885, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Name
       value: Push (1)
