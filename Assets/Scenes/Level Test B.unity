@@ -10965,33 +10965,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8368238321741651398, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5668213445614979997}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
---- !u!1 &5668213445614979996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8368238321741651398, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-  m_PrefabInstance: {fileID: 5668213445614979995}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5668213445614979997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5668213445614979996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d65f1ef957956448533be8f10a33a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {x: 27.2, y: 1.81, z: 0}
-  - {x: 41.26, y: 10.8, z: 0}
-  - {x: 56.1, y: 0.95, z: 0}
-  - {x: 40.7, y: -9.73, z: 0}
 --- !u!1001 &6605480102144420544
 PrefabInstance:
   m_ObjectHideFlags: 0

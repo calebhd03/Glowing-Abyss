@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.destination = patrolPoints[currentPatrolPoint];
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
             else
                 currentPatrolPoint++;
 
-
+            navMeshAgent.destination = patrolPoints[currentPatrolPoint];
         }
     }
 
