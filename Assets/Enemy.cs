@@ -5,16 +5,25 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-
+    public int scaredAmount;
+    public float attackDistance;
+    public float passiveDistance;
+    public float cooldownTime;
+    public float attackSpeed;
     public List<Vector3> patrolPoints = new List<Vector3>();
 
+    [HideInInspector] public GameObject player;
+
     NavMeshAgent navMeshAgent;
+    Animator animator;
     int currentPatrolPoint = 0;
+    bool onCooldown = false;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         navMeshAgent.destination = patrolPoints[currentPatrolPoint];
     }
 
@@ -22,10 +31,16 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         PatrolPath();
+        TestAttack();
     }
 
-    private void PatrolPath()
+    public void PatrolPath()
     {
+        //attacking player
+        if(animator.GetBool("Attack") == true && !onCooldown && NotScared())
+        {
+            navMeshAgent.destination = player.transform.position;
+        }
         //reached current patrol point
         if(Vector3.Distance(this.transform.position, patrolPoints[currentPatrolPoint]) < .2f)
         {
@@ -35,8 +50,83 @@ public class Enemy : MonoBehaviour
             else
                 currentPatrolPoint++;
 
-            navMeshAgent.destination = patrolPoints[currentPatrolPoint];
+            GoToNextPoint();
         }
+    }
+
+    public void GoToNextPoint()
+    {
+        navMeshAgent.destination = patrolPoints[currentPatrolPoint];
+    }
+
+    public void TestAttack()
+    {
+        float distToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
+        if(onCooldown)
+        {
+
+        }
+        else if(distToPlayer <= attackDistance && NotScared())
+        {
+            AttackPlayer();
+        }
+        else if( distToPlayer > passiveDistance)
+        {
+            StopAttackPlayer();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //eat plankton
+        if(collision.CompareTag("Plankton") && animator.GetBool("Attack"))
+        {
+            EatPlankton(collision);
+        }
+    }
+
+    public void AttackPlayer()
+    {
+        if (NotScared())
+            animator.SetBool("Attack", true);
+        else
+            StopAttackPlayer();
+    }
+
+    public void StopAttackPlayer()
+    {
+        animator.SetBool("Attack", false);
+        GoToNextPoint();
+    }
+
+    public void EatPlankton(Collider2D planktonCol)
+    {
+        if(!onCooldown)
+        {
+            Debug.Log("Eat plankton " + planktonCol.name);
+            StartCoroutine(cooldown());
+            GoToNextPoint();
+
+            PlanktonTracking pt = planktonCol.GetComponent<PlanktonTracking>();
+            player.GetComponent<FocusingTarget>().RemovePlanktonFromList(pt);
+            pt.Ate();
+        }
+    }
+
+    bool NotScared()
+    {
+        return (player.GetComponent<FocusingTarget>().planktonAmount() < scaredAmount);
+    }
+
+    IEnumerator cooldown()
+    {
+        onCooldown = true;
+        animator.SetTrigger("Start Cooldown");
+
+        yield return new WaitForSeconds(cooldownTime);
+
+        onCooldown = false;
+        animator.SetTrigger("End Cooldown");
     }
 
     private void OnDrawGizmos()
