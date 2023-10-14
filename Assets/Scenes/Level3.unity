@@ -2662,6 +2662,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -79.49997
       objectReference: {fileID: 0}
+    - target: {fileID: 1574597909371043547, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: bd6db0f0943748541925855a7c3c48e1, type: 2}
     - target: {fileID: 2068433152622104117, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -2734,9 +2738,17 @@ PrefabInstance:
       propertyPath: levelRequirements
       value: 
       objectReference: {fileID: 11400000, guid: f6fbd5c27f6af654f950a109651db0e6, type: 2}
+    - target: {fileID: 8552839025640342317, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552839025640342317, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -112.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8611835442942704023, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8633994534713630932, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_Name
