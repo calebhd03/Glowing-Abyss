@@ -27207,7 +27207,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: requiredPlankton
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
@@ -27293,13 +27293,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 102.932
       objectReference: {fileID: 0}
+    - target: {fileID: 4423054797469098501, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4777874459269492916, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: m_Name
       value: BigCoral1_Illum_Final
       objectReference: {fileID: 0}
     - target: {fileID: 7149523391384039110, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35686,11 +35690,11 @@ PrefabInstance:
       objectReference: {fileID: 23800000, guid: 8fe636476d7d1354b99d93dd17a697b0, type: 2}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.06
+      value: 19.718864
       objectReference: {fileID: 0}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -346.26996
+      value: -346.2035
       objectReference: {fileID: 0}
     - target: {fileID: 3084974966075322176, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_Color.b
