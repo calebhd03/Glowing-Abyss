@@ -41,8 +41,9 @@ public class Enemy : MonoBehaviour
         {
             navMeshAgent.destination = player.transform.position;
         }
+
         //reached current patrol point
-        if(Vector3.Distance(this.transform.position, patrolPoints[currentPatrolPoint]) < .2f)
+        else if(Vector3.Distance(this.transform.position, patrolPoints[currentPatrolPoint]) < .2f || !NotScared())
         {
             //move to next patrol point
             if (currentPatrolPoint == patrolPoints.Count - 1)
@@ -64,13 +65,12 @@ public class Enemy : MonoBehaviour
         float distToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         if(onCooldown)
         {
-
         }
         else if(distToPlayer <= attackDistance && NotScared())
         {
             AttackPlayer();
         }
-        else if( distToPlayer > passiveDistance)
+        else if(distToPlayer > passiveDistance || !NotScared())
         {
             StopAttackPlayer();
         }
@@ -87,10 +87,7 @@ public class Enemy : MonoBehaviour
 
     public void AttackPlayer()
     {
-        if (NotScared())
-            animator.SetBool("Attack", true);
-        else
-            StopAttackPlayer();
+        animator.SetBool("Attack", true);
     }
 
     public void StopAttackPlayer()
