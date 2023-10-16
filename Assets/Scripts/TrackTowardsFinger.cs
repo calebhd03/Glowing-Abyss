@@ -8,6 +8,8 @@ public class TrackTowardsFinger : MonoBehaviour
     public Joystick joystick;
     NavMeshAgent navMeshAgent;
     private Camera cam;
+    FocusingTarget focusingTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,18 +17,13 @@ public class TrackTowardsFinger : MonoBehaviour
         cam = Camera.main;
     }
 
-    public void OnTouchPosition(InputValue value)
-    {
-        //Vector2 pos = value.Get<Vector2>();
-        //Vector3 dest = cam.ScreenToWorldPoint(new Vector3(pos.x, pos.y, cam.nearClipPlane));
-
-        //navMeshAgent.destination = dest;
-    }
-
     public void Update()
     {
+        //move player
         Vector2 dir = joystick.Direction;
         navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+    
+        //face plankton towards direction
     }
 
     public void StopMoving()
