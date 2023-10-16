@@ -36,7 +36,7 @@ RectTransform:
   - {fileID: 2833808761994567805}
   - {fileID: 2855265855276084446}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -64,7 +64,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &8023455088498087752
 MonoBehaviour:
@@ -1601,7 +1601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4615023802663809634, guid: 3aeb980813b784245b9cd7fef5ffe65e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4885910378426350059, guid: 3aeb980813b784245b9cd7fef5ffe65e, type: 3}
       propertyPath: m_SizeDelta.x
