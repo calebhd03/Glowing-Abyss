@@ -62,6 +62,15 @@ public class FocusingTarget : MonoBehaviour
         if (gameManager != null) gameManager.TestWin();
     }
 
+    public void RemovePlanktonFromList(PlanktonTracking pt)
+    {
+        Debug.Log("Removed : " + pt.name + " from list");
+        planktonTrackingsList.Remove(pt);
+
+        if (counterText != null) counterText.text = planktonAmount().ToString();
+        if (gameManager != null) gameManager.TestWin();
+    }
+
     public int planktonAmount()
     {
         return planktonTrackingsList.Count;

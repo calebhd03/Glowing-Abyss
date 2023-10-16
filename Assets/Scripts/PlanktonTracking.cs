@@ -9,4 +9,9 @@ public class PlanktonTracking : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, pos, speed);
     }
+
+    public void Ate()
+    {
+        Destroy(gameObject);
+    }
 }
