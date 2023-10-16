@@ -6,20 +6,17 @@ public class LevelSelector : MonoBehaviour
 {
     //public Fader sceneFader;
 
+    public bool lockLevels = false;
+
     public GameObject Grid;
-    public GameObject levelPrefab;
-    public string[] levelNames;
+
     public Button[] levelButtons;
 
     private void Start()
     {
         //disabled locked levels
-        int LevelReached = PlayerPrefs.GetInt("levelReached", 1);
-        Debug.Log("Level reached : " + LevelReached);
-        for (int i = LevelReached; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].interactable = false;
-        }
+        if(lockLevels)
+            DisableLevels();
     }
 
     //opens scene of level button
@@ -34,5 +31,15 @@ public class LevelSelector : MonoBehaviour
         //sceneFader.FadeTo(levelToLoad);
 
         SceneManager.LoadScene(levelToLoad);
+    }
+
+    public void DisableLevels()
+    {
+        int LevelReached = PlayerPrefs.GetInt("levelReached", 1);
+        Debug.Log("Level reached : " + LevelReached);
+        for (int i = LevelReached; i < levelButtons.Length; i++)
+        {
+            levelButtons[i].interactable = false;
+        }
     }
 }

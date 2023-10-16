@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
         allPlants = illumList.ToList<Pushable>();
         Debug.Log(allPlants.Count);
 
+        Time.timeScale = 1;
+
         foreach (Pushable i in allPlants)
         {
             //set gameManager in illum
