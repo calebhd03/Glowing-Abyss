@@ -37,7 +37,7 @@ public class FocusingTarget : MonoBehaviour
     {
         foreach (PlanktonTracking p in planktonTrackingsList)
         {
-            p.MoveTowards(targetingPoint.position, pullingStrength);
+            p.MoveTowards(targetingPoint.position, pullingStrength, transform.forward);
         }
     }
 

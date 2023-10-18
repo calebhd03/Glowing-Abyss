@@ -8,6 +8,7 @@ public class TrackTowardsFinger : MonoBehaviour
     public Joystick joystick;
     NavMeshAgent navMeshAgent;
     private Camera cam;
+    bool allowedToMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +27,22 @@ public class TrackTowardsFinger : MonoBehaviour
     public void Update()
     {
         Vector2 dir = joystick.Direction;
-        navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+
+        if(allowedToMove)
+            navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+    }
+
+    public void GoTo(Vector3 pos)
+    {
+        navMeshAgent.destination = pos;
     }
 
     public void StopMoving()
     {
-        navMeshAgent.isStopped = true;
+        allowedToMove = false;
     }
     public void StartMoving()
     {
-        navMeshAgent.isStopped = false;
+        allowedToMove = true;
     }
 }
