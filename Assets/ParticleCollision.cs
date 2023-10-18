@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ParticleCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnParticleTrigger()
     {
+        Debug.Log("Particle");
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

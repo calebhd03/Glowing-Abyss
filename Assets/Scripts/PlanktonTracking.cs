@@ -17,6 +17,11 @@ public class PlanktonTracking : MonoBehaviour
 
     }
 
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("OTher thing Particl + " + other);
+    }
+
     public void MoveTowards(Vector3 pos, float speed, Vector3 lookDirection, Vector3 playerSpeed)
     {
         Vector3 oldPos = transform.position;
