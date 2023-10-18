@@ -53,7 +53,6 @@ public class Pushable : MonoBehaviour
 
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
-        if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().GoTo(this.transform.position);
         animatorSp.SetTrigger("Push");
         if(animatorLi != null) animatorLi.SetTrigger("Push");
     }

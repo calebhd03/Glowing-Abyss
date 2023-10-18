@@ -4,7 +4,6 @@ using UnityEngine.Events;
 using UnityEngine;
 using System;
 using TMPro;
-using UnityEngine.AI;
 
 public class FocusingTarget : MonoBehaviour
 {
@@ -38,7 +37,7 @@ public class FocusingTarget : MonoBehaviour
     {
         foreach (PlanktonTracking p in planktonTrackingsList)
         {
-            p.MoveTowards(targetingPoint.position, pullingStrength, transform.forward, GetComponent<NavMeshAgent>().velocity);
+            p.MoveTowards(targetingPoint.position, pullingStrength);
         }
     }
 
