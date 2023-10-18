@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class FloatingText : MonoBehaviour
 {
-    public float maxDistance;
-    public float stopFallOfDistance;
+    public float minDistance;
 
     public TextMeshProUGUI text;
     public GameObject player;
@@ -21,7 +20,7 @@ public class FloatingText : MonoBehaviour
     {
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
-        float a = stopFallOfDistance/dist;
+        float a = minDistance / dist;
         text.color = new Color(text.color.r, text.color.g, text.color.b, a*a);
         
     }
