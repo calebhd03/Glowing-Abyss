@@ -695,6 +695,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+--- !u!1 &103127960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169917397580964657, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+  m_PrefabInstance: {fileID: 5668213445614979995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &123907426
 GameObject:
   m_ObjectHideFlags: 0
@@ -11566,7 +11571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.6192513
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11596,6 +11601,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 486386060499152119, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 103127960}
     - target: {fileID: 2357005936471127812, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_Name
       value: Floating Text

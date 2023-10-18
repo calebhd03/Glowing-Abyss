@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05647c5bcf7b91d49a93f6795daf9a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistance: 5
+  stopFallOfDistance: 5
+  text: {fileID: 19905790654417404}
+  player: {fileID: 0}
 --- !u!1 &3599788146194535681
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +245,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &8910487211060159885
 MonoBehaviour:
