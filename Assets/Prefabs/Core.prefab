@@ -85,7 +85,10 @@ Transform:
   - {fileID: 997009737127821440}
   - {fileID: 909351260123870903}
   - {fileID: 6967706711585377758}
+<<<<<<< Updated upstream
   - {fileID: 1625082619381111312}
+=======
+>>>>>>> Stashed changes
   - {fileID: 4529057881102031546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -659,7 +662,11 @@ PrefabInstance:
     - target: {fileID: 2929657228719295653, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 0}
+=======
+      objectReference: {fileID: 7973834886571514404, guid: 00000000000000000000000000000000, type: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 2929657228719295653, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -683,7 +690,11 @@ PrefabInstance:
     - target: {fileID: 6261519598921282632, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 0}
+=======
+      objectReference: {fileID: 7087484465737435864, guid: 00000000000000000000000000000000, type: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 6261519598921282632, guid: 1ea82c2bbc3db1147bf3feb1840eb16d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -803,11 +814,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
       value: -118.09997
+=======
+      value: -29.811485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -120.66298
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1018,6 +1037,34 @@ PrefabInstance:
     - target: {fileID: 1877348876396938453, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
       propertyPath: m_Name
       value: Joystick Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806458756106242982, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d1ed73f22023fc143837e1c6f7884160, type: 3}
+    - target: {fileID: 6806458756106242982, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806458756106242982, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806458756106242982, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806458756106242982, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806458756496126385, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 87145b6a2bce39943990433904b37c73, type: 3}
+    - target: {fileID: 6806458756496126385, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     - target: {fileID: 8663734265392179270, guid: cc7ee023f3715994a88ed4a861f87294, type: 3}
       propertyPath: m_Pivot.x
