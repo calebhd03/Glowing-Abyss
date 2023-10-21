@@ -4793,6 +4793,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -57.1
       objectReference: {fileID: 0}
+    - target: {fileID: 872682840758148996, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 997009737127821440, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
       value: -20.900028
@@ -4811,7 +4815,7 @@ PrefabInstance:
       objectReference: {fileID: 23800000, guid: 8930aba38d9134a4d8632da79166645c, type: 2}
     - target: {fileID: 2327906562338640064, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2590147725000829975, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
@@ -4825,6 +4829,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -57.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3302032542407542335, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.691033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302032542407542335, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.691033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302032542407542335, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.691033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302032542407542335, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 64.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302032542407542335, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -60.85
+      objectReference: {fileID: 0}
     - target: {fileID: 3655378262343986777, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
       value: -72.400024
@@ -4832,6 +4856,38 @@ PrefabInstance:
     - target: {fileID: 3804544593147291138, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[0].x
+      value: 36.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[0].y
+      value: -81.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[1].x
+      value: 59.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[1].y
+      value: -69.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[2].x
+      value: 72.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[2].y
+      value: -62.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[3].x
+      value: 54.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075553556210613456, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: patrolPoints.Array.data[3].y
+      value: -78.4
       objectReference: {fileID: 0}
     - target: {fileID: 4370545565547706602, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
