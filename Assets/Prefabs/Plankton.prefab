@@ -69,7 +69,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.77
+  m_Radius: 0.47
 --- !u!50 &81160295295743791
 Rigidbody2D:
   serializedVersion: 4
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd264186c20c76b4e94d9ccddd234c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteObj: {fileID: 8324657040298419002}
 --- !u!1 &1581938500913712826
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +761,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8324657040298419002}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710707, w: 0.7071066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
