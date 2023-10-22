@@ -19592,6 +19592,34 @@ PrefabInstance:
       propertyPath: requiredPlankton
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1648723354}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 739006774486695286, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1356476162344964442, guid: 525d5013494a4f34ca9cabfef1367d26, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99993247
@@ -58466,6 +58494,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1648723354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7087484465737435864, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+  m_PrefabInstance: {fileID: 5668213445614979995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edec4b6db4226d54b9588a5a067e69e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650911680
 GameObject:
   m_ObjectHideFlags: 0
