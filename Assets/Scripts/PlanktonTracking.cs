@@ -19,7 +19,11 @@ public class PlanktonTracking : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("OTher thing Particl + " + other);
+        //plankton collides with geyser Bubbles
+        if(other.CompareTag("Geyser"))
+        {
+            Ate();
+        }
     }
 
     public void MoveTowards(Vector3 pos, float speed, Vector3 lookDirection, Vector3 playerSpeed)
