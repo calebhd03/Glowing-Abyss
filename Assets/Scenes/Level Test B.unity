@@ -11678,34 +11678,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: UVModule.mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: CollisionModule.collisionMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: CollisionModule.collisionMessages
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 896
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: TriggerModule.primitives.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963318384972607000, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
-      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5867208210116845591, guid: d774da34aaf48814db55f4f9c4b91a00, type: 3}
       propertyPath: m_Name
       value: Geyser
