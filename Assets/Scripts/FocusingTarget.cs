@@ -4,6 +4,7 @@ using UnityEngine.Events;
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.AI;
 
 public class FocusingTarget : MonoBehaviour
 {
@@ -35,9 +36,12 @@ public class FocusingTarget : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        foreach (PlanktonTracking p in planktonTrackingsList)
+        for (int i=0; i<planktonTrackingsList.Count; i++)
         {
-            p.MoveTowards(targetingPoint.position, pullingStrength);
+            if (planktonTrackingsList[i] == null)
+                planktonTrackingsList.Remove(planktonTrackingsList[i]);
+            else
+                planktonTrackingsList[i].MoveTowards(targetingPoint.position, pullingStrength, transform.forward, GetComponent<NavMeshAgent>().velocity);
         }
     }
 
