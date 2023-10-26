@@ -6,8 +6,11 @@ using UnityEngine.InputSystem;
 public class TrackTowardsFinger : MonoBehaviour
 {
     public Joystick joystick;
+    public AudioSource movingSound;
+
     NavMeshAgent navMeshAgent;
     private Camera cam;
+    bool isMoving = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,24 @@ public class TrackTowardsFinger : MonoBehaviour
     {
         Vector2 dir = joystick.Direction;
         navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+
+        if(navMeshAgent.velocity.magnitude > 0)
+        {
+            if(isMoving == false)
+            {
+                movingSound.Play();
+            }
+            isMoving = true;
+        }
+        else
+        {
+            if (isMoving)
+            {
+                movingSound.Stop();
+            }
+            isMoving = false;
+        }
+
     }
 
     public void StopMoving()
