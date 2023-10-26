@@ -9,6 +9,10 @@ using UnityEngine.AI;
 public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
+    public AudioSource collectSound;
+    public AudioSource deadSound;
+
+    [Header("Refrences")]
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList = new List<PlanktonTracking>();
     [HideInInspector] public GameManager gameManager;
@@ -62,6 +66,8 @@ public class FocusingTarget : MonoBehaviour
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
 
+        collectSound.Play();
+
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
     }
@@ -70,6 +76,8 @@ public class FocusingTarget : MonoBehaviour
     {
         Debug.Log("Removed : " + pt.name + " from list");
         planktonTrackingsList.Remove(pt);
+
+        deadSound.Play();
 
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
