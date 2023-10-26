@@ -8,6 +8,9 @@ public class Pushable : MonoBehaviour
     [SerializeField] int requiredPlankton;
     [SerializeField] bool multiplePushable;
     [SerializeField] bool pausePlayerMovement = true;
+    [SerializeField] AudioSource pushedSound;
+
+    [Header("Refrences")]
     [SerializeField] Animator animatorSp;
     [SerializeField] Animator animatorLi;
     [SerializeField] TextMeshProUGUI text;
@@ -53,8 +56,9 @@ public class Pushable : MonoBehaviour
 
         player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
-        animatorSp.SetTrigger("Push");
-        if(animatorLi != null) animatorLi.SetTrigger("Push");
+        animatorSp.SetTrigger("Push"); 
+        pushedSound.Play();
+        if (animatorLi != null) animatorLi.SetTrigger("Push");
     }
 
     public void StopPushing()
