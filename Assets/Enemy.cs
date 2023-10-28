@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public float passiveDistance;
     public float cooldownTime;
     public float attackSpeed;
+    public AudioClip chaseClip;
     public List<Vector3> patrolPoints = new List<Vector3>();
 
     [HideInInspector] public GameObject player;
@@ -95,6 +96,15 @@ public class Enemy : MonoBehaviour
         animator.SetBool("Attack", false);
         GoToNextPoint();
     }
+    public void PlayChaseSound()
+    {
+        AudioManager.instance.SwapTrack(chaseClip);
+    }
+
+    public void StopChaseSound()
+    {
+        AudioManager.instance.ReturnToDefault();
+    }
 
     public void EatPlankton(Collider2D planktonCol)
     {
@@ -138,5 +148,16 @@ public class Enemy : MonoBehaviour
 
         Gizmos.DrawSphere(patrolPoints[patrolPoints.Count-1], 2f);
         Gizmos.DrawLine(patrolPoints[patrolPoints.Count-1], patrolPoints[0]);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        //Draw passive circle
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(this.transform.position, passiveDistance);
+
+        //Draw attack circle
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(this.transform.position, attackDistance);
     }
 }

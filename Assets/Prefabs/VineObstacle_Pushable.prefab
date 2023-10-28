@@ -30,7 +30,7 @@ Transform:
   m_Children:
   - {fileID: 4057662833684646298}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -33.168}
 --- !u!1001 &2636037146499340514
 PrefabInstance:
@@ -232,6 +232,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6330499909300645316, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000943830755059820, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdbe852f10eabd44cbf2300209a5b9f7, type: 3}
+    - target: {fileID: 7000943830755059820, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8107881840357633909, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
