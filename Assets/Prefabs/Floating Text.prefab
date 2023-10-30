@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 1479335713364701609}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &486386060499152119
 MonoBehaviour:
@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05647c5bcf7b91d49a93f6795daf9a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDistance: 0
+  maxDistance: 15
+  minDistance: 8
+  fadeSpeed: 1
   text: {fileID: 19905790654417404}
   player: {fileID: 0}
 --- !u!1 &3599788146194535681
@@ -83,7 +85,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.42, y: 0.65}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6918525998176138721
@@ -114,7 +116,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: XX
+  m_text: 'Get close to the plant to revive it
+
+    Look for plants that stand out'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb8b9eafa007f2a4083c28b80dda21d3, type: 2}
   m_sharedMaterial: {fileID: -1656537121179430324, guid: eb8b9eafa007f2a4083c28b80dda21d3, type: 2}
@@ -141,8 +145,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 0.8
+  m_fontSizeBase: 0.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -244,7 +248,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 50
   m_TargetDisplay: 0
 --- !u!114 &8910487211060159885
 MonoBehaviour:
