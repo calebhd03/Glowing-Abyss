@@ -42,10 +42,7 @@ public class FocusingTarget : MonoBehaviour
     {
         for (int i=0; i<planktonTrackingsList.Count; i++)
         {
-            if (planktonTrackingsList[i] == null)
-                planktonTrackingsList.Remove(planktonTrackingsList[i]);
-            else
-                planktonTrackingsList[i].MoveTowards(targetingPoint.position, pullingStrength, transform.forward, GetComponent<NavMeshAgent>().velocity);
+            planktonTrackingsList[i].MoveTowards(targetingPoint.position, pullingStrength, transform.forward, GetComponent<NavMeshAgent>().velocity);
         }
     }
 
@@ -81,6 +78,12 @@ public class FocusingTarget : MonoBehaviour
 
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
+
+            Debug.Log("plankotn amount " + planktonAmount());
+        if (planktonAmount() <= 0)
+        {
+            gameManager.LooseLevel();
+        }
     }
 
     public int planktonAmount()

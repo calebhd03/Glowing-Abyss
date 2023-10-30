@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject IllumParentObj;
 
     [SerializeField] GameObject winningUI;
+    [SerializeField] GameObject loosingUI;
     [SerializeField] List<Pushable> allPlants = new List<Pushable>();
     [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
@@ -73,8 +74,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.LogWarning("Level Lost!");
 
-        //TODO: Scene Fader
-        SceneManager.LoadScene(0);
+        loosingUI.SetActive(true);
     }
 
     public void WinLevel()
@@ -85,7 +85,5 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
 
         winningUI.SetActive(true);
-
-        //TODO: Scene Fader
     }
 }

@@ -5,6 +5,7 @@ public class PlanktonTracking : MonoBehaviour
 {
     public float timeBeforeDestroy;
     public SpriteRenderer sprite;
+    public ParticleSystem deadParticle;
     public bool click = false;
     public AudioSource deadPlanktonSound;
 
@@ -56,9 +57,15 @@ public class PlanktonTracking : MonoBehaviour
 
     public void Ate()
     {
+        if (dead) return;
+
+        Camera.main.GetComponent<CameraRefrence>().player.GetComponent<FocusingTarget>().RemovePlanktonFromList(this);
+        GetComponent<CapsuleCollider2D>().enabled = false;
+
         dead = true;
         sprite.enabled = false;
         deadPlanktonSound.Play();
+        deadParticle.Play();
         animator.SetTrigger("Died");
         StartCoroutine(destoryAfter());
     }
