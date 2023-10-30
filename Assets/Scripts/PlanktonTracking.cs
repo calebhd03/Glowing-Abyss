@@ -1,9 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlanktonTracking : MonoBehaviour
 {
-    public GameObject spriteObj;
+    public float timeBeforeDestroy;
+    public SpriteRenderer sprite;
     public bool click = false;
+    public AudioSource deadPlanktonSound;
+
+    bool dead = false;
     Animator animator;
     float swimAnimSpeed;
 
@@ -28,6 +33,9 @@ public class PlanktonTracking : MonoBehaviour
 
     public void MoveTowards(Vector3 pos, float speed, Vector3 lookDirection, Vector3 playerSpeed)
     {
+        if(dead)
+        { return; }
+
         Vector3 oldPos = transform.position;
 
         transform.position = Vector3.MoveTowards(transform.position, pos, speed);
@@ -48,6 +56,16 @@ public class PlanktonTracking : MonoBehaviour
 
     public void Ate()
     {
+        dead = true;
+        sprite.enabled = false;
+        deadPlanktonSound.Play();
+        animator.SetTrigger("Died");
+        StartCoroutine(destoryAfter());
+    }
+
+    IEnumerator destoryAfter()
+    {
+        yield return new WaitForSeconds(timeBeforeDestroy);
         Destroy(gameObject);
     }
 }
