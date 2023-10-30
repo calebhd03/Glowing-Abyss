@@ -33,6 +33,21 @@ public class Enemy : MonoBehaviour
     {
         PatrolPath();
         TestAttack();
+        LookDirection();
+    }
+
+    void LookDirection()
+    {
+        //left
+        if (navMeshAgent.velocity.x < -.05)
+        {
+
+        }
+        //right
+        if (navMeshAgent.velocity.x > .05)
+        {
+
+        }
     }
 
     public void PatrolPath()
