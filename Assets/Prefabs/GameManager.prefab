@@ -187,6 +187,9 @@ MonoBehaviour:
   IllumParentObj: {fileID: 0}
   winningUI: {fileID: 7972797988579680268}
   loosingUI: {fileID: 1712965514935519040}
+  vcam1: {fileID: 0}
+  vcam2: {fileID: 0}
+  stateCinemachineCamera: {fileID: 0}
   allPlants: []
   illuminatedPlants: []
 --- !u!1 &6104260064916515177
@@ -384,7 +387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1413436989443828121, guid: 738ad8bb80a11f649978960478c1b271, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6945848848010069592, guid: 738ad8bb80a11f649978960478c1b271, type: 3}
       propertyPath: m_Pivot.x

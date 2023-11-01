@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject winningUI;
     [SerializeField] GameObject loosingUI;
+    [SerializeField] CinemachineVirtualCamera vcam1;
+    [SerializeField] CinemachineVirtualCamera vcam2;
+    [SerializeField] Animator stateCinemachineCamera;
     [SerializeField] List<Pushable> allPlants = new List<Pushable>();
     [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
@@ -84,6 +88,20 @@ public class GameManager : MonoBehaviour
         if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
             PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
 
+        SwitchToEndOfLevelCamera();
+    }
+
+    public void ShowWinUI()
+    {
         winningUI.SetActive(true);
+    }
+
+    public void SwitchToEndOfLevelCamera()
+    {
+        stateCinemachineCamera.Play("End of level");
+
+        int p = vcam2.Priority;
+        vcam1.Priority = vcam2.Priority;
+        vcam2.Priority = p;
     }
 }
