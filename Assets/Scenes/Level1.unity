@@ -2016,6 +2016,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
+      propertyPath: m_text
+      value: Swimming over certain plants will brighten the environment. Use these
+        plants to illuminate your path!
+      objectReference: {fileID: 0}
     - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -11526,95 +11531,6 @@ Transform:
   m_Father: {fileID: 668096530}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &732713144
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_text
-      value: Collect the required Plankton to revive it and get them to safety
-      objectReference: {fileID: 0}
-    - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_fontSize
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_RootOrder
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 45.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -128.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.6192513
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 486386060499152119, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1759593598}
-    - target: {fileID: 2357005936471127812, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_Name
-      value: Floating Text (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4487529733742497046, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7378461735173143879, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 7378461735173143879, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
 --- !u!1 &734143115
 GameObject:
   m_ObjectHideFlags: 0
@@ -15272,7 +15188,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_text
-      value: Click on the screen to activate the joystick
+      value: Tap and drag your finger anywhere across the screen to get started!
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSize
@@ -16289,7 +16205,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_text
-      value: Get close to the plankton to pick it up
+      value: "Swim near other plankton to add them to your plankton group. \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSize
@@ -23077,7 +22993,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_text
-      value: Gather enough plankton to clear obstacles
+      value: 'Gather the required amount of plankton to clear the vines.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSize
@@ -23255,7 +23173,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_text
-      value: Gather enough plankton to clear obstacles
+      value: 'Gather the required amount of plankton to clear the vines.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSize
@@ -23795,11 +23715,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_text
-      value: Search for a large coral or plant to complete the level
+      value: "Discover and revive the large coral with the required plankton group
+        to advance to the next level. \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSize
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
+      propertyPath: m_margin.z
+      value: -7.0078964
       objectReference: {fileID: 0}
     - target: {fileID: 19905790654417404, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_fontSizeBase
@@ -23807,7 +23732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 323558561804012575, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23853,6 +23778,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1759593598}
+    - target: {fileID: 1479335713364701609, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479335713364701609, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 2357005936471127812, guid: ed6cd8913aa4c6d4990d3acda9f99159, type: 3}
       propertyPath: m_Name
       value: Floating Text (6)
@@ -28790,11 +28723,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.2751
+      value: -29.509178
       objectReference: {fileID: 0}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -120.650536
+      value: -120.6645
       objectReference: {fileID: 0}
     - target: {fileID: 4837976928914678904, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_RootOrder
