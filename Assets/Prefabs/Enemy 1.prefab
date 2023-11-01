@@ -194,6 +194,9 @@ MonoBehaviour:
   passiveDistance: 10
   cooldownTime: 3
   attackSpeed: 2
+  sprites:
+  - {fileID: 4110338402075868587}
+  - {fileID: 7708426314580084656}
   chaseClip: {fileID: 8300000, guid: 0f8e9eece654381469d170b4b4f5244b, type: 3}
   patrolPoints:
   - {x: 27.2, y: 1.81, z: 0}
@@ -319,8 +322,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df8ce886478bc6546917fbaa65a3529f, type: 3}
+--- !u!212 &4110338402075868587 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5576920994099579280, guid: df8ce886478bc6546917fbaa65a3529f, type: 3}
+  m_PrefabInstance: {fileID: 8390187308394591291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7012783669492925009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1530528367526344298, guid: df8ce886478bc6546917fbaa65a3529f, type: 3}
+  m_PrefabInstance: {fileID: 8390187308394591291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7708426314580084656 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2204012852237857675, guid: df8ce886478bc6546917fbaa65a3529f, type: 3}
   m_PrefabInstance: {fileID: 8390187308394591291}
   m_PrefabAsset: {fileID: 0}
