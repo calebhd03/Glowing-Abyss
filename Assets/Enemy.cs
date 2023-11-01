@@ -5,12 +5,17 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Numbers")]
     public int scaredAmount;
     public float attackDistance;
     public float passiveDistance;
     public float cooldownTime;
     public float attackSpeed;
+
+    [Header("Refrences")]
+    public SpriteRenderer[] sprites;
     public AudioClip chaseClip;
+
     public List<Vector3> patrolPoints = new List<Vector3>();
 
     [HideInInspector] public GameObject player;
@@ -41,12 +46,20 @@ public class Enemy : MonoBehaviour
         //left
         if (navMeshAgent.velocity.x < -.05)
         {
-
+            foreach(SpriteRenderer sprite in sprites)
+            {
+                sprite.flipX = false;
+                sprite.transform.localPosition = new Vector3(Mathf.Abs(sprite.transform.localPosition.x), sprite.transform.localPosition.y, sprite.transform.localPosition.z);
+            }
         }
         //right
         if (navMeshAgent.velocity.x > .05)
         {
-
+            foreach (SpriteRenderer sprite in sprites)
+            {
+                sprite.flipX = true;
+                sprite.transform.localPosition = new Vector3(-Mathf.Abs(sprite.transform.localPosition.x), sprite.transform.localPosition.y, sprite.transform.localPosition.z);
+            }
         }
     }
 
