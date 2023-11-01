@@ -62,6 +62,8 @@ public class PlanktonTracking : MonoBehaviour
         Camera.main.GetComponent<CameraRefrence>().player.GetComponent<FocusingTarget>().RemovePlanktonFromList(this);
         GetComponent<CapsuleCollider2D>().enabled = false;
 
+        GetComponentInParent<PlanktonManager>().remove(this);
+
         dead = true;
         sprite.enabled = false;
         deadPlanktonSound.Play();
