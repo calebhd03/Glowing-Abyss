@@ -84565,7 +84565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035328201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.700005, y: -201, z: -344.77234}
+  m_LocalPosition: {x: 117.799995, y: -177.49997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90679,26 +90679,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 44.96512
       objectReference: {fileID: 0}
-    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-      propertyPath: field of view
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-      propertyPath: far clip plane
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
-      propertyPath: orthographic size
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 829733312179534187, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7d19786e3f5528248b7210eddfc2692b, type: 3}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: orthographic size
+      value: 7.17
+      objectReference: {fileID: 0}
     - target: {fileID: 1258131441699224640, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -90713,15 +90713,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 155.1
+      value: 214.2
       objectReference: {fileID: 0}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -349.9
+      value: -326.39996
       objectReference: {fileID: 0}
     - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -344.77234
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3655378262343986777, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90730,6 +90730,10 @@ PrefabInstance:
     - target: {fileID: 3655378262343986777, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
       value: -296.66556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724727648545538017, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.7
       objectReference: {fileID: 0}
     - target: {fileID: 4837976928914678904, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_RootOrder
@@ -90795,6 +90799,10 @@ PrefabInstance:
       propertyPath: levelRequirements
       value: 
       objectReference: {fileID: 11400000, guid: 7b236b3adafe1ec45b3f5d69f2f24b65, type: 2}
+    - target: {fileID: 7134341350042818670, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 80.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7450228177184852759, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0

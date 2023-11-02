@@ -72437,6 +72437,7 @@ MonoBehaviour:
   passiveDistance: 0
   cooldownTime: 3
   attackSpeed: 2
+  sprites: []
   chaseClip: {fileID: 8300000, guid: 0f8e9eece654381469d170b4b4f5244b, type: 3}
   patrolPoints:
   - {x: 0, y: 0, z: 0}
@@ -72468,16 +72469,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 485215613576435455, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 356.5
+      value: 248.92719
       objectReference: {fileID: 0}
     - target: {fileID: 485215613576435455, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -510.99997
+      value: -139.63489
       objectReference: {fileID: 0}
     - target: {fileID: 829733312179534187, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7d19786e3f5528248b7210eddfc2692b, type: 3}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192577413241406343, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: orthographic size
+      value: 7.17
+      objectReference: {fileID: 0}
     - target: {fileID: 1258131441699224640, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -72498,6 +72515,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -510.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 2863783373234530494, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 3628511321493222525, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_Speed
       value: 8
@@ -72513,6 +72534,14 @@ PrefabInstance:
     - target: {fileID: 3955366541555837700, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724727648545538017, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 515.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724727648545538017, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -124.7
       objectReference: {fileID: 0}
     - target: {fileID: 4837976928914678904, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_RootOrder
@@ -72578,6 +72607,10 @@ PrefabInstance:
       propertyPath: levelRequirements
       value: 
       objectReference: {fileID: 11400000, guid: 7b236b3adafe1ec45b3f5d69f2f24b65, type: 2}
+    - target: {fileID: 7134341350042818670, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 143.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7524061895313607933, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: pullingStrength
       value: 0.3
