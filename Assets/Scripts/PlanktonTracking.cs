@@ -9,6 +9,8 @@ public class PlanktonTracking : MonoBehaviour
     public bool click = false;
     public AudioSource deadPlanktonSound;
 
+    [HideInInspector] public FocusingTarget player; 
+
     bool dead = false;
     Animator animator;
     float swimAnimSpeed;
@@ -58,6 +60,7 @@ public class PlanktonTracking : MonoBehaviour
     public void Ate()
     {
         if (dead) return;
+        if (!player.CanPlanktonDie()) return;
 
         Camera.main.GetComponent<CameraRefrence>().player.GetComponent<FocusingTarget>().RemovePlanktonFromList(this);
         GetComponent<CapsuleCollider2D>().enabled = false;

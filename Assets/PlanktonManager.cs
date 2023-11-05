@@ -7,6 +7,7 @@ public class PlanktonManager : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI counterText;
+    [SerializeField] FocusingTarget player;
 
     List<PlanktonTracking> planktons = new List<PlanktonTracking>();
 
@@ -15,6 +16,11 @@ public class PlanktonManager : MonoBehaviour
     {
         planktons = GetComponentsInChildren<PlanktonTracking>().ToList<PlanktonTracking>();
         UpdatePlanktonMaxCounter();
+
+        foreach(PlanktonTracking pt in planktons)
+        {
+            pt.player= this.player;
+        }
     }
 
     public void remove(PlanktonTracking pt)

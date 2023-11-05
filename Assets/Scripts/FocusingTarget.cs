@@ -9,6 +9,7 @@ using UnityEngine.AI;
 public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
+    public float deathCooldownTimer;
     public AudioSource collectSound;
     public AudioSource deadSound;
 
@@ -19,6 +20,7 @@ public class FocusingTarget : MonoBehaviour
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
+    [HideInInspector] public bool canDie = true;
     CircleCollider2D playerCol;
     // Start is called before the first frame update
     void Start()
@@ -67,6 +69,22 @@ public class FocusingTarget : MonoBehaviour
 
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
+    }
+
+    public bool CanPlanktonDie()
+    {
+        if(!canDie)
+            return false;
+
+        StartCoroutine(DeathCooldown());
+        return true;
+    }
+
+    IEnumerator DeathCooldown()
+    {
+        canDie = false;
+        yield return new WaitForSeconds(deathCooldownTimer);
+        canDie = true;
     }
 
     public void RemovePlanktonFromList(PlanktonTracking pt)

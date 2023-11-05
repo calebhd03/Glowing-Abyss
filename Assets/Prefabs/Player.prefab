@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pullingStrength: 0.15
+  deathCooldownTimer: 1
   collectSound: {fileID: 2528130605788407942}
   deadSound: {fileID: 5916843065603034818}
   counterText: {fileID: 0}
@@ -162,6 +163,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   targetingPoint: {fileID: 0}
+  canDie: 1
 --- !u!114 &1921750339352011864
 MonoBehaviour:
   m_ObjectHideFlags: 0
