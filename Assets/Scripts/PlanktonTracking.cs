@@ -9,6 +9,7 @@ public class PlanktonTracking : MonoBehaviour
     public bool click = false;
     public AudioSource deadPlanktonSound;
 
+    [HideInInspector] public bool disabled;
     [HideInInspector] public FocusingTarget player; 
 
     bool dead = false;
@@ -79,5 +80,16 @@ public class PlanktonTracking : MonoBehaviour
     {
         yield return new WaitForSeconds(timeBeforeDestroy);
         Destroy(gameObject);
+    }
+
+    void SetUniteractive()
+    {
+        sprite.color.a = .2;
+        disabled = true;
+    }
+
+    void SetInteractive()
+    {
+
     }
 }
