@@ -84,7 +84,7 @@ public class PlanktonTracking : MonoBehaviour
 
     void SetUniteractive()
     {
-        sprite.color.a = .2;
+        //sprite.color.a = .2;
         disabled = true;
     }
 
