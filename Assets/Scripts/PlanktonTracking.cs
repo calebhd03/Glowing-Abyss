@@ -22,6 +22,7 @@ public class PlanktonTracking : MonoBehaviour
 
         swimAnimSpeed = Random.Range(.8f, 1.2f);
 
+        SetUniteractive();
         //spriteObj.transform.rotation = Quaternion.Euler(90, 0, -90);
 
     }
@@ -84,12 +85,13 @@ public class PlanktonTracking : MonoBehaviour
 
     void SetUniteractive()
     {
-        //sprite.color.a = .2;
+        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, .2f);
         disabled = true;
     }
 
     void SetInteractive()
     {
-
+        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
+        disabled = false;
     }
 }
