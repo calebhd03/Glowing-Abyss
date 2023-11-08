@@ -8,12 +8,13 @@ public class PlanktonTracking : MonoBehaviour
     public ParticleSystem deadParticle;
     public bool click = false;
     public AudioSource deadPlanktonSound;
+    public Animator animator;
 
-    [HideInInspector] public bool disabled;
+    //[HideInInspector] 
+    public bool disabled;
     [HideInInspector] public FocusingTarget player; 
 
     bool dead = false;
-    Animator animator;
     float swimAnimSpeed;
 
     private void Start()
@@ -22,7 +23,9 @@ public class PlanktonTracking : MonoBehaviour
 
         swimAnimSpeed = Random.Range(.8f, 1.2f);
 
-        SetUniteractive();
+        if(disabled)
+            Disabled();
+
         //spriteObj.transform.rotation = Quaternion.Euler(90, 0, -90);
 
     }
@@ -83,15 +86,15 @@ public class PlanktonTracking : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void SetUniteractive()
+    public void Disabled()
     {
-        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, .2f);
+        animator.SetTrigger("Disabled");
         disabled = true;
     }
 
-    void SetInteractive()
+    public void Revived()
     {
-        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1f);
+        animator.SetTrigger("Revived");
         disabled = false;
     }
 }
