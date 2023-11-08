@@ -16,7 +16,10 @@ public class GameManager : MonoBehaviour
     public GameObject IllumParentObj;
 
     [SerializeField] GameObject winningUI;
-    [SerializeField] GameObject loosingUI;
+    [SerializeField] GameObject allDeadUI;
+    public int requiredPlankton = 0;
+    [SerializeField] GameObject notEnoughPlanktonUI;
+    [SerializeField] PlanktonManager planktonManager;
     [SerializeField] CinemachineVirtualCamera vcam1;
     [SerializeField] CinemachineVirtualCamera vcam2;
     [SerializeField] Animator stateCinemachineCamera;
@@ -80,8 +83,20 @@ public class GameManager : MonoBehaviour
     {
         Debug.LogWarning("Level Lost!");
 
-        loosingUI.SetActive(true);
+        allDeadUI.SetActive(true);
         OnLooseLevel.Invoke();
+    }
+
+    public void TestNotEnough()
+    {
+        Debug.Log("Test enough");
+        if(planktonManager.planktons.Count < requiredPlankton)
+        {
+            Debug.LogWarning("Level Lost!");
+
+            notEnoughPlanktonUI.SetActive(true);
+            OnLooseLevel.Invoke();
+        }
     }
 
     public void WinLevel()

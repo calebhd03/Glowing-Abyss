@@ -72,6 +72,7 @@ public class FocusingTarget : MonoBehaviour
 
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
+        if (gameManager != null) gameManager.TestNotEnough();
     }
 
     public bool CanPlanktonDie()
@@ -105,6 +106,8 @@ public class FocusingTarget : MonoBehaviour
         {
             gameManager.LooseLevel();
         }
+
+        if (gameManager != null) gameManager.TestNotEnough();
     }
 
     public int planktonAmount()
