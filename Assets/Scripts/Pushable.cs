@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using System;
 
 public class Pushable : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Pushable : MonoBehaviour
     GameObject player;
     bool canBePushed = true;
 
+    public static event Action interactButtonOn;
+    public static event Action interactButtonOff;
+
     private void Start()
     {
         if (text != null) text.text = requiredPlankton.ToString();
@@ -39,13 +43,28 @@ public class Pushable : MonoBehaviour
 
     }
 
+    private void OnDisable()
+    {
+        InteractButton.interactButtonPressed -= StartPushing;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.CompareTag("Player"))
         {
             player = other.gameObject;
+
             CheckAction();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactButtonOff.Invoke();
+            InteractButton.interactButtonPressed -= StartPushing;
         }
     }
 
@@ -57,7 +76,8 @@ public class Pushable : MonoBehaviour
         Debug.Log("checking push with " + player.GetComponent<FocusingTarget>().planktonAmount() + " plankton");
         if (player.GetComponent<FocusingTarget>().planktonAmount() >= requiredPlankton)
         {
-            StartPushing();
+            interactButtonOn.Invoke();
+            InteractButton.interactButtonPressed += StartPushing;
         }
     }
 
