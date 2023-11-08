@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class Pushable : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Pushable : MonoBehaviour
     [SerializeField] Animator animatorLi;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
+    [SerializeField] List<PlanktonTracking> revivedPlanktonList = new List<PlanktonTracking>();
     [SerializeField] UnityEvent AfterPushed;
     [HideInInspector] public GameManager gameManager;
 
@@ -24,6 +26,17 @@ public class Pushable : MonoBehaviour
     private void Start()
     {
         if (text != null) text.text = requiredPlankton.ToString();
+
+        //disables all connected plankton
+        foreach (PlanktonTracking pt in revivedPlanktonList) {
+            if (pt != null)
+            {
+                Debug.Log("disabled " + pt.name); 
+                pt.Disabled();
+            }
+            
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -59,6 +72,17 @@ public class Pushable : MonoBehaviour
         animatorSp.SetTrigger("Push"); 
         pushedSound.Play();
         if (animatorLi != null) animatorLi.SetTrigger("Push");
+
+        //revives all connected planktons
+        foreach(PlanktonTracking pt in revivedPlanktonList) {
+            if (pt != null)
+            {
+                Debug.Log("Revived " + pt.name); 
+                pt.Revived(); 
+
+            }
+
+        }
     }
 
     public void StopPushing()

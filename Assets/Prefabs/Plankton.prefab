@@ -118,6 +118,9 @@ MonoBehaviour:
   deadParticle: {fileID: 7448034386950412210}
   click: 0
   deadPlanktonSound: {fileID: 1415016711421048078}
+  animator: {fileID: 8286768555340762514}
+  disabled: 0
+  player: {fileID: 0}
 --- !u!70 &4030570203490319183
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -260,7 +263,7 @@ GameObject:
   - component: {fileID: 4856685454696719819}
   - component: {fileID: 4982368842019103760}
   m_Layer: 7
-  m_Name: Light 2D
+  m_Name: Main Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

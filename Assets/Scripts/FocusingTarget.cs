@@ -62,6 +62,9 @@ public class FocusingTarget : MonoBehaviour
 
     public void AddPlanktonToList(PlanktonTracking pt)
     {
+        //plankton is disabled
+        if(pt.disabled) return;
+
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
 
