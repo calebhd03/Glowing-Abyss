@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera vcam1;
     [SerializeField] CinemachineVirtualCamera vcam2;
     [SerializeField] Animator stateCinemachineCamera;
+    public UnityEvent OnLooseLevel;
+
     [SerializeField] List<Pushable> allPlants = new List<Pushable>();
     [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
@@ -79,6 +81,7 @@ public class GameManager : MonoBehaviour
         Debug.LogWarning("Level Lost!");
 
         loosingUI.SetActive(true);
+        OnLooseLevel.Invoke();
     }
 
     public void WinLevel()
