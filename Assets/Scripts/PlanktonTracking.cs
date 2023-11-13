@@ -12,7 +12,13 @@ public class PlanktonTracking : MonoBehaviour
 
     //[HideInInspector] 
     public bool disabled;
-    [HideInInspector] public FocusingTarget player; 
+    [HideInInspector] public FocusingTarget player;
+    public Sprite planktonHat;
+    public Sprite planktonTrail; 
+    public Animator planktonWing;
+
+
+
 
     bool dead = false;
     float swimAnimSpeed;

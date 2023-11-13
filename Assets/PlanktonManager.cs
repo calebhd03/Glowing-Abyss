@@ -9,7 +9,7 @@ public class PlanktonManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] FocusingTarget player;
 
-    List<PlanktonTracking> planktons = new List<PlanktonTracking>();
+    public List<PlanktonTracking> planktons = new List<PlanktonTracking>();
 
     // Start is called before the first frame update
     void Start()
