@@ -89,12 +89,14 @@ public class PlanktonTracking : MonoBehaviour
     public void Disabled()
     {
         animator.SetTrigger("Disabled");
+        GetComponent<CapsuleCollider2D>().enabled = false;
         disabled = true;
     }
 
     public void Revived()
     {
         animator.SetTrigger("Revived");
+        GetComponent<CapsuleCollider2D>().enabled = true;
         disabled = false;
     }
 }
