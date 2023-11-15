@@ -8,22 +8,25 @@ public class SetCosmetics : MonoBehaviour
     {
         Debug.Log("planktonHat = " + PlayerPrefs.GetInt("planktonHat"));
         Debug.Log("planktonTrail = " + PlayerPrefs.GetInt("planktonTrail"));
-        Debug.Log("planktonHat = " + PlayerPrefs.GetInt("planktonHat"));
+        Debug.Log("planktonWing = " + PlayerPrefs.GetInt("planktonWing"));
     }
 
     public void SetPlanktonHat(int hatIndex)
     {
         PlayerPrefs.SetInt("planktonHat", hatIndex);
+        PlayerPrefs.Save();
         Debug.Log(PlayerPrefs.GetInt("planktonHat"));
     }
-    public void SetPlanktonTrail(int hatIndex)
+    public void SetPlanktonTrail(int trailIndex)
     {
-        PlayerPrefs.SetInt("planktonTrail", hatIndex);
+        PlayerPrefs.SetInt("planktonTrail", trailIndex);
+        PlayerPrefs.Save();
         Debug.Log(PlayerPrefs.GetInt("planktonTrail"));
     }
-    public void SetPlanktonWing(int hatIndex)
+    public void SetPlanktonWing(int wingIndex)
     {
-        PlayerPrefs.SetInt("planktonWing", hatIndex);
+        PlayerPrefs.SetInt("planktonWing", wingIndex);
+        PlayerPrefs.Save();
         Debug.Log(PlayerPrefs.GetInt("planktonWing"));
     }
 }

@@ -5,6 +5,6 @@ using UnityEngine;
 public class Cosmetics : ScriptableObject
 {
     public List<Sprite> planktonHats = new List<Sprite>();
-    public List<Sprite> planktonTrails = new List<Sprite>();
-    public List<Sprite> planktonWings = new List<Sprite>();
+    public List<GameObject> planktonTrails = new List<GameObject>();
+    //public List<Sprite> planktonWings = new List<Sprite>();
 }

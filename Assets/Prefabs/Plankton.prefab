@@ -122,8 +122,8 @@ MonoBehaviour:
   disabled: 0
   player: {fileID: 0}
   planktonHat: {fileID: 0}
-  planktonTrail: {fileID: 0}
-  planktonWing: {fileID: 0}
+  planktonTrail: {fileID: 7020959225251423028}
+  planktonWing: {fileID: 8286768555340762514}
 --- !u!70 &4030570203490319183
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1412,6 +1412,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2cbed81c8fbf24f89e3da25a907e48, type: 3}
+--- !u!1 &7020959225251423028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1974235797758223129, guid: dc2cbed81c8fbf24f89e3da25a907e48, type: 3}
+  m_PrefabInstance: {fileID: 8794001514862592045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9061126504988828635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 555358120325260278, guid: dc2cbed81c8fbf24f89e3da25a907e48, type: 3}

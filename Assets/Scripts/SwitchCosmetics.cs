@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwitchCosmetics : MonoBehaviour
@@ -11,17 +12,34 @@ public class SwitchCosmetics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(PlanktonTracking pt in planktonManager.planktons)
-        {
-            pt.planktonHat = cosmetics.planktonHats[PlayerPrefs.GetInt("planktonHat")];
-            pt.planktonTrail = cosmetics.planktonHats[PlayerPrefs.GetInt("planktonTrail")];
-            pt.planktonWing.SetInteger("planktonWing", PlayerPrefs.GetInt("planktonWing"));
-        }
+        PlayerPrefs.SetInt("planktonTrail", 0);
+        PlayerPrefs.SetInt("planktonWing", 0);
+        //UpdateSkins();
+        //StartCoroutine(swap());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator swap()
     {
-        
+        yield return new WaitForSeconds(3);
+        UpdateSkins();
+        StartCoroutine(swap());
+    }
+    public void UpdateSkins()
+    {
+        Debug.Log("Updating skins");
+        foreach (PlanktonTracking pt in planktonManager.planktons)
+        {
+            if (pt == null) break;
+            //PlayerPrefs.GetInt("planktonHat");
+            //pt.planktonHat = cosmetics.planktonHats[PlayerPrefs.GetInt("planktonHat")];
+
+            Destroy(pt.planktonTrail);
+            Quaternion QTmp = pt.planktonTrail.transform.rotation;
+            GameObject temp = Instantiate(cosmetics.planktonTrails[PlayerPrefs.GetInt("planktonTrail")], pt.transform.position, QTmp, pt.transform);
+            temp.name = "bubbleTrail";
+            pt.planktonTrail = temp;
+
+            pt.planktonWing.SetInteger("planktonWing", PlayerPrefs.GetInt("planktonWing"));
+        }
     }
 }
