@@ -6720,6 +6720,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7381194629699591334, guid: a76ddd52d9b74134e85e01c78f695870, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15960,7 +15964,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -1674793730, guid: 17def622c7b6166408c80747f72c2ebd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.9647059}
   m_FlipX: 0
@@ -26837,7 +26841,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: 5a096a6ab7255dc4c9d55a837069ab9b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.85882354}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29315,7 +29319,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: requiredPlankton
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 408369894312398722, guid: cbdcbd8b305052f41a4791328609f2fe, type: 3}
       propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
