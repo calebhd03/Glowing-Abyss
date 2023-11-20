@@ -79,6 +79,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.LogWarning("Level Lost!");
 
+        GetComponent<PauseScript>().PauseGame();
         loosingUI.SetActive(true);
         OnLooseLevel.Invoke();
     }
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.LogWarning("Level Won!");
 
+        GetComponent<PauseScript>().PauseGame();
         if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
             PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
 
