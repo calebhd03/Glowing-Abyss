@@ -18,7 +18,6 @@ public class SwitchCosmetics : MonoBehaviour
         UpdateSkins();
         //StartCoroutine(swap());
     }
-
     IEnumerator swap()
     {
         yield return new WaitForSeconds(3);
@@ -29,7 +28,7 @@ public class SwitchCosmetics : MonoBehaviour
 
     public void UpdateSkins()
     {
-        Debug.Log("Updating skins");
+        Debug.Log("Updating skins " + planktonManager.planktons.Count);
         foreach (PlanktonTracking pt in planktonManager.planktons)
         {
             if (pt == null) break;
