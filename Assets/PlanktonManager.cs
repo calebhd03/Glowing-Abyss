@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlanktonManager : MonoBehaviour
 {
-
+    public bool updateMaxCount = true;
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] FocusingTarget player;
 
@@ -26,7 +26,8 @@ public class PlanktonManager : MonoBehaviour
     public void remove(PlanktonTracking pt)
     {
         planktons.Remove(pt);
-        UpdatePlanktonMaxCounter();
+        if (updateMaxCount)
+            UpdatePlanktonMaxCounter();
     }
 
     public void UpdatePlanktonMaxCounter()

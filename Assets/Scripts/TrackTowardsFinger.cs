@@ -7,6 +7,7 @@ public class TrackTowardsFinger : MonoBehaviour
 {
     public Joystick joystick;
     public AudioSource movingSound;
+    public bool takingInput = true;
 
     NavMeshAgent navMeshAgent;
     private Camera cam;
@@ -29,7 +30,11 @@ public class TrackTowardsFinger : MonoBehaviour
     public void Update()
     {
         Vector2 dir = joystick.Direction;
-        navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+
+        if(takingInput)
+        {
+            SetDestination(new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z));
+        }
 
         if(navMeshAgent.velocity.magnitude > 0)
         {
@@ -48,6 +53,11 @@ public class TrackTowardsFinger : MonoBehaviour
             isMoving = false;
         }
 
+    }
+
+    public void SetDestination(Vector3 dest)
+    {
+        navMeshAgent.destination = dest;
     }
 
     public void StopMoving()
