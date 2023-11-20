@@ -10,9 +10,14 @@ public class PlanktonTracking : MonoBehaviour
     public AudioSource deadPlanktonSound;
     public Animator animator;
 
-    //[HideInInspector] 
     public bool disabled;
-    [HideInInspector] public FocusingTarget player; 
+    [HideInInspector] public FocusingTarget player;
+    public Sprite planktonHat;
+    public GameObject planktonTrail; 
+    public Animator planktonWing;
+
+
+
 
     bool dead = false;
     float swimAnimSpeed;
@@ -51,12 +56,10 @@ public class PlanktonTracking : MonoBehaviour
         if (playerSpeed == Vector3.zero)
         {
             animator.SetBool("Swimming", false);
-            animator.speed = 1;
         }
         else
         {
             animator.SetBool("Swimming", true);
-            animator.speed = swimAnimSpeed;
         }
 
         transform.right = lookDirection;

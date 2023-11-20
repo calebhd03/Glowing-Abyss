@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4052654419167264681}
   - component: {fileID: 7272090175182975448}
+  - component: {fileID: 601684231510129309}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -191,8 +192,23 @@ MonoBehaviour:
   vcam1: {fileID: 0}
   vcam2: {fileID: 0}
   stateCinemachineCamera: {fileID: 0}
+  OnLooseLevel:
+    m_PersistentCalls:
+      m_Calls: []
   allPlants: []
   illuminatedPlants: []
+--- !u!114 &601684231510129309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443278865279971666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c5234c76235ac489f2fab6d291eab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6104260064916515177
 GameObject:
   m_ObjectHideFlags: 0
