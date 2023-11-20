@@ -121,7 +121,7 @@ MonoBehaviour:
   animator: {fileID: 8286768555340762514}
   disabled: 0
   player: {fileID: 0}
-  planktonHat: {fileID: 0}
+  planktonHat: {fileID: 4571355506843301464}
   planktonTrail: {fileID: 7020959225251423028}
   planktonWing: {fileID: 8286768555340762514}
 --- !u!70 &4030570203490319183
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 8032884477342658432}
   - component: {fileID: 4571355506843301464}
   m_Layer: 7
-  m_Name: Wings (1)
+  m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,14 +390,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2804358255911847326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 3.0847, z: -0.8987078}
-  m_LocalScale: {x: 0.114263415, y: 0.6278, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0, y: 0.636, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5167666354419965542}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &4571355506843301464
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -440,11 +440,11 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.3070793, y: 8.73}
+  m_Size: {x: 0.68, y: 0.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

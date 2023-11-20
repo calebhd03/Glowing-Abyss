@@ -14,8 +14,9 @@ public class SwitchCosmetics : MonoBehaviour
     {
         //PlayerPrefs.SetInt("planktonTrail", 0);
         //PlayerPrefs.SetInt("planktonWing", 0);
-        //UpdateSkins();
-        StartCoroutine(swap());
+        //PlayerPrefs.SetInt("planktonHat", 0);
+        UpdateSkins();
+        //StartCoroutine(swap());
     }
 
     IEnumerator swap()
@@ -33,8 +34,8 @@ public class SwitchCosmetics : MonoBehaviour
         {
             if (pt == null) break;
             Debug.Log("updating skin of " + pt.name);
-            //PlayerPrefs.GetInt("planktonHat");
-            //pt.planktonHat = cosmetics.planktonHats[PlayerPrefs.GetInt("planktonHat")];
+            PlayerPrefs.GetInt("planktonHat");
+            pt.planktonHat.sprite = cosmetics.planktonHats[PlayerPrefs.GetInt("planktonHat")];
 
             //sets the planktons bubble trail
             Transform QTmp = pt.planktonTrail.transform;
