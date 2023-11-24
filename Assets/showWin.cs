@@ -10,6 +10,7 @@ public class showWin : MonoBehaviour
 
     public void Show()
     {
+
         StartCoroutine(ShowUIAfter());
     }
     IEnumerator ShowUIAfter()

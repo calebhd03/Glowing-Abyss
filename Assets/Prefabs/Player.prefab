@@ -140,6 +140,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   movingSound: {fileID: 7460552991903731607}
+  takingInput: 1
+  layermask:
+    serializedVersion: 2
+    m_Bits: 1854
 --- !u!114 &315301502515870209
 MonoBehaviour:
   m_ObjectHideFlags: 0

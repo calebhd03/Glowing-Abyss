@@ -8,10 +8,16 @@ public class TrackTowardsFinger : MonoBehaviour
     public Joystick joystick;
     public AudioSource movingSound;
     public bool takingInput = true;
+    [SerializeField] private LayerMask layermask;
 
     NavMeshAgent navMeshAgent;
     private Camera cam;
     bool isMoving = false;
+
+    RaycastHit2D raycast;
+    Ray ray;
+    Vector2 dir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,16 +35,48 @@ public class TrackTowardsFinger : MonoBehaviour
 
     public void Update()
     {
-        Vector2 dir = joystick.Direction;
+        dir = joystick.Direction;
+        Debug.Log("dir " + dir);
 
-        if(takingInput)
+        if (takingInput)
         {
-            SetDestination(new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z));
+            LayerMask mask = LayerMask.GetMask("Plankton");
+            mask = -(mask);
+            //Debug.Log(" mask " + mask);
+
+            raycast = Physics2D.Raycast(transform.position, dir, 1f, layermask);
+
+            Debug.Log("ray point: " + raycast.point);
+            if(raycast.collider!=null) Debug.Log("ray name: " + raycast.collider.name);
+
+            Ray ray = new Ray(transform.position, dir);
+
+            if(raycast)
+            {
+                SetDestination(ray.GetPoint(raycast.distance-.1f));
+            }
+            else
+            {
+                SetDestination(ray.GetPoint(1f));
+            }
+
         }
 
-        if(navMeshAgent.velocity.magnitude > 0)
+        MovingSound();
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(raycast.point, 1f);
+        Gizmos.DrawRay(transform.position, dir);
+    }
+
+    private void MovingSound()
+    {
+        if (navMeshAgent.velocity.magnitude > 0)
         {
-            if(isMoving == false)
+            if (isMoving == false)
             {
                 movingSound.Play();
             }
@@ -52,7 +90,6 @@ public class TrackTowardsFinger : MonoBehaviour
             }
             isMoving = false;
         }
-
     }
 
     public void SetDestination(Vector3 dest)
@@ -64,6 +101,7 @@ public class TrackTowardsFinger : MonoBehaviour
     {
         navMeshAgent.isStopped = true;
     }
+
     public void StartMoving()
     {
         navMeshAgent.isStopped = false;
