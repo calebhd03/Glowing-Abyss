@@ -170,11 +170,11 @@ public class Enemy : MonoBehaviour
 
         for(int i = 0; i < patrolPoints.Count-1; i++)
         {
-            Gizmos.DrawSphere(patrolPoints[i], 2f);
+            Gizmos.DrawSphere(patrolPoints[i], 1f);
             Gizmos.DrawLine(patrolPoints[i], patrolPoints[i+1]);
         }
 
-        Gizmos.DrawSphere(patrolPoints[patrolPoints.Count-1], 2f);
+        Gizmos.DrawSphere(patrolPoints[patrolPoints.Count-1], 1f);
         Gizmos.DrawLine(patrolPoints[patrolPoints.Count-1], patrolPoints[0]);
     }
 
