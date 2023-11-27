@@ -36,7 +36,7 @@ public class TrackTowardsFinger : MonoBehaviour
     public void Update()
     {
         dir = joystick.Direction;
-        Debug.Log("dir " + dir);
+        //Debug.Log("dir " + dir);
 
         if (takingInput)
         {
@@ -46,8 +46,6 @@ public class TrackTowardsFinger : MonoBehaviour
 
             raycast = Physics2D.Raycast(transform.position, dir, 1f, layermask);
 
-            Debug.Log("ray point: " + raycast.point);
-            if(raycast.collider!=null) Debug.Log("ray name: " + raycast.collider.name);
 
             Ray ray = new Ray(transform.position, dir);
 

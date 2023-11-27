@@ -87,7 +87,7 @@ public class Pushable : MonoBehaviour
 
         canBePushed = false;
 
-        player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
+        if(spriteT!= null) player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
         animatorSp.SetTrigger("Push"); 
         pushedSound.Play();
