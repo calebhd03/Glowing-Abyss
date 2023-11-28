@@ -164,6 +164,7 @@ MonoBehaviour:
   animatorLi: {fileID: 0}
   text: {fileID: 0}
   spriteT: {fileID: 7640940784689572612}
+  revivedPlanktonList: []
   AfterPushed:
     m_PersistentCalls:
       m_Calls: []
@@ -300,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5989589156510555955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.035, y: -0.014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -340,7 +341,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04739601, y: -0.043087438}
+  m_Offset: {x: -0.015109252, y: -0.1284149}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -351,7 +352,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11876117, y: 0.69468343}
+  m_Size: {x: 0.091086306, y: 0.47175086}
   m_EdgeRadius: 0
 --- !u!50 &4456952215847529591
 Rigidbody2D:
@@ -400,6 +401,7 @@ MonoBehaviour:
   animatorLi: {fileID: 1832054947485402240}
   text: {fileID: 2313361503166172089}
   spriteT: {fileID: 7640940784689572612}
+  revivedPlanktonList: []
   AfterPushed:
     m_PersistentCalls:
       m_Calls: []
@@ -445,7 +447,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.64707184
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -799,7 +801,7 @@ Transform:
   - {fileID: 7640940784689572612}
   - {fileID: 4129911221838854350}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7392720907894465553
 PrefabInstance:
