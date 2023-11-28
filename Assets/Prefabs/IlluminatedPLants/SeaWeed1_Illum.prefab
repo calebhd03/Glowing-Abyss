@@ -315,7 +315,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06055122, y: -0.15326868}
+  m_Offset: {x: -0.07976934, y: -0.2078484}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -326,7 +326,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19769774, y: 0.5269458}
+  m_Size: {x: 0.113138646, y: 0.41778642}
   m_EdgeRadius: 0
 --- !u!50 &4836782453364957139
 Rigidbody2D:
@@ -375,6 +375,7 @@ MonoBehaviour:
   animatorLi: {fileID: 2782134382405688836}
   text: {fileID: 6039039528187716793}
   spriteT: {fileID: 78582873512142730}
+  revivedPlanktonList: []
   AfterPushed:
     m_PersistentCalls:
       m_Calls: []
@@ -528,7 +529,7 @@ Transform:
   - {fileID: 7651453386019488656}
   - {fileID: 6074617876742063619}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9164963106928509101
 GameObject:
