@@ -16404,16 +16404,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
---- !u!1 &745867011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 674587733096216687, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
-  m_PrefabInstance: {fileID: 745867010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &745867012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
   m_PrefabInstance: {fileID: 745867010}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &745867015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+  m_PrefabInstance: {fileID: 745867010}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd264186c20c76b4e94d9ccddd234c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &745925343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20742,8 +20748,24 @@ PrefabInstance:
       value: 7.09
       objectReference: {fileID: 0}
     - target: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
       propertyPath: disabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: planktonHat
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280235735178223948, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: planktonWing
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -24326,7 +24348,7 @@ PrefabInstance:
     - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 745867011}
+      objectReference: {fileID: 745867015}
     - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
