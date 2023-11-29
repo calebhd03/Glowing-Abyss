@@ -4,16 +4,23 @@ using UnityEngine.Events;
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.AI;
 
 public class FocusingTarget : MonoBehaviour
 {
     [SerializeField] float pullingStrength = 1.0f;
+    public float deathCooldownTimer;
+    public AudioSource collectSound;
+    public AudioSource deadSound;
+
+    [Header("Refrences")]
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList = new List<PlanktonTracking>();
     [HideInInspector] public GameManager gameManager;
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
+    [HideInInspector] public bool canDie = true;
     CircleCollider2D playerCol;
     // Start is called before the first frame update
     void Start()
@@ -35,9 +42,9 @@ public class FocusingTarget : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        foreach (PlanktonTracking p in planktonTrackingsList)
+        for (int i=0; i<planktonTrackingsList.Count; i++)
         {
-            p.MoveTowards(targetingPoint.position, pullingStrength);
+            planktonTrackingsList[i].MoveTowards(targetingPoint.position, pullingStrength, transform.forward, GetComponent<NavMeshAgent>().velocity);
         }
     }
 
@@ -55,11 +62,49 @@ public class FocusingTarget : MonoBehaviour
 
     public void AddPlanktonToList(PlanktonTracking pt)
     {
+        //plankton is disabled
+        if(pt.disabled) return;
+
         Debug.Log("Added : " + pt.name + " to list");
         planktonTrackingsList.Add(pt);
 
+        collectSound.Play();
+
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
+    }
+
+    public bool CanPlanktonDie()
+    {
+        if(!canDie)
+            return false;
+
+        StartCoroutine(DeathCooldown());
+        return true;
+    }
+
+    IEnumerator DeathCooldown()
+    {
+        canDie = false;
+        yield return new WaitForSeconds(deathCooldownTimer);
+        canDie = true;
+    }
+
+    public void RemovePlanktonFromList(PlanktonTracking pt)
+    {
+        Debug.Log("Removed : " + pt.name + " from list");
+        planktonTrackingsList.Remove(pt);
+
+        deadSound.Play();
+
+        if (counterText != null) counterText.text = planktonAmount().ToString();
+        if (gameManager != null) gameManager.TestWin();
+
+            Debug.Log("plankotn amount " + planktonAmount());
+        if (planktonAmount() <= 0)
+        {
+            gameManager.LooseLevel();
+        }
     }
 
     public int planktonAmount()

@@ -6,8 +6,18 @@ using UnityEngine.InputSystem;
 public class TrackTowardsFinger : MonoBehaviour
 {
     public Joystick joystick;
+    public AudioSource movingSound;
+    public bool takingInput = true;
+    [SerializeField] private LayerMask layermask;
+
     NavMeshAgent navMeshAgent;
     private Camera cam;
+    bool isMoving = false;
+
+    RaycastHit2D raycast;
+    Ray ray;
+    Vector2 dir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,14 +35,71 @@ public class TrackTowardsFinger : MonoBehaviour
 
     public void Update()
     {
-        Vector2 dir = joystick.Direction;
-        navMeshAgent.destination = new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z);
+        dir = joystick.Direction;
+        //Debug.Log("dir " + dir);
+
+        if (takingInput)
+        {
+            LayerMask mask = LayerMask.GetMask("Plankton");
+            mask = -(mask);
+            //Debug.Log(" mask " + mask);
+
+            raycast = Physics2D.Raycast(transform.position, dir, 1f, layermask);
+
+
+            Ray ray = new Ray(transform.position, dir);
+
+            if(raycast)
+            {
+                SetDestination(ray.GetPoint(raycast.distance-.1f));
+            }
+            else
+            {
+                SetDestination(ray.GetPoint(1f));
+            }
+
+        }
+
+        MovingSound();
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(raycast.point, 1f);
+        Gizmos.DrawRay(transform.position, dir);
+    }
+
+    private void MovingSound()
+    {
+        if (navMeshAgent.velocity.magnitude > 0)
+        {
+            if (isMoving == false)
+            {
+                movingSound.Play();
+            }
+            isMoving = true;
+        }
+        else
+        {
+            if (isMoving)
+            {
+                movingSound.Stop();
+            }
+            isMoving = false;
+        }
+    }
+
+    public void SetDestination(Vector3 dest)
+    {
+        navMeshAgent.destination = dest;
     }
 
     public void StopMoving()
     {
         navMeshAgent.isStopped = true;
     }
+
     public void StartMoving()
     {
         navMeshAgent.isStopped = false;

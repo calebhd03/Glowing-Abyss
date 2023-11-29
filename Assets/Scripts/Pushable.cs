@@ -2,25 +2,50 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using System;
 
 public class Pushable : MonoBehaviour
 {
     [SerializeField] int requiredPlankton;
     [SerializeField] bool multiplePushable;
     [SerializeField] bool pausePlayerMovement = true;
+    [SerializeField] AudioSource pushedSound;
+
+    [Header("Refrences")]
     [SerializeField] Animator animatorSp;
     [SerializeField] Animator animatorLi;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Transform spriteT;
+    [SerializeField] List<PlanktonTracking> revivedPlanktonList = new List<PlanktonTracking>();
     [SerializeField] UnityEvent AfterPushed;
     [HideInInspector] public GameManager gameManager;
 
     GameObject player;
     bool canBePushed = true;
 
+    public static event Action interactButtonOn;
+    public static event Action interactButtonOff;
+
     private void Start()
     {
         if (text != null) text.text = requiredPlankton.ToString();
+
+        //disables all connected plankton
+        foreach (PlanktonTracking pt in revivedPlanktonList) {
+            if (pt != null)
+            {
+                Debug.Log("disabled " + pt.name); 
+                pt.Disabled();
+            }
+            
+        }
+
+    }
+
+    private void OnDisable()
+    {
+        InteractButton.interactButtonPressed -= StartPushing;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -29,7 +54,17 @@ public class Pushable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player = other.gameObject;
+
             CheckAction();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactButtonOff.Invoke();
+            InteractButton.interactButtonPressed -= StartPushing;
         }
     }
 
@@ -41,7 +76,8 @@ public class Pushable : MonoBehaviour
         Debug.Log("checking push with " + player.GetComponent<FocusingTarget>().planktonAmount() + " plankton");
         if (player.GetComponent<FocusingTarget>().planktonAmount() >= requiredPlankton)
         {
-            StartPushing();
+            interactButtonOn.Invoke();
+            InteractButton.interactButtonPressed += StartPushing;
         }
     }
 
@@ -51,10 +87,22 @@ public class Pushable : MonoBehaviour
 
         canBePushed = false;
 
-        player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
+        if(spriteT!= null) player.GetComponent<FocusingTarget>().targetingPoint = spriteT;
         if (pausePlayerMovement) player.GetComponent<TrackTowardsFinger>().StopMoving();
-        animatorSp.SetTrigger("Push");
-        if(animatorLi != null) animatorLi.SetTrigger("Push");
+        animatorSp.SetTrigger("Push"); 
+        pushedSound.Play();
+        if (animatorLi != null) animatorLi.SetTrigger("Push");
+
+        //revives all connected planktons
+        foreach(PlanktonTracking pt in revivedPlanktonList) {
+            if (pt != null)
+            {
+                Debug.Log("Revived " + pt.name); 
+                pt.Revived(); 
+
+            }
+
+        }
     }
 
     public void StopPushing()

@@ -1,9 +1,9 @@
+using Cinemachine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
     public GameObject IllumParentObj;
 
     [SerializeField] GameObject winningUI;
+    [SerializeField] GameObject loosingUI;
+    [SerializeField] CinemachineVirtualCamera vcam1;
+    [SerializeField] CinemachineVirtualCamera vcam2;
+    [SerializeField] Animator stateCinemachineCamera;
+    public UnityEvent OnLooseLevel;
+
     [SerializeField] List<Pushable> allPlants = new List<Pushable>();
     [SerializeField] List<Pushable> illuminatedPlants = new List<Pushable>();
 
@@ -73,19 +79,33 @@ public class GameManager : MonoBehaviour
     {
         Debug.LogWarning("Level Lost!");
 
-        //TODO: Scene Fader
-        SceneManager.LoadScene(0);
+        GetComponent<PauseScript>().PauseGame();
+        loosingUI.SetActive(true);
+        OnLooseLevel.Invoke();
     }
 
     public void WinLevel()
     {
         Debug.LogWarning("Level Won!");
 
+        GetComponent<PauseScript>().PauseGame();
         if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
             PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
 
-        winningUI.SetActive(true);
+        SwitchToEndOfLevelCamera();
+    }
 
-        //TODO: Scene Fader
+    public void ShowWinUI()
+    {
+        winningUI.SetActive(true);
+    }
+
+    public void SwitchToEndOfLevelCamera()
+    {
+        stateCinemachineCamera.Play("End of level");
+
+        int p = vcam2.Priority;
+        vcam1.Priority = vcam2.Priority;
+        vcam2.Priority = p;
     }
 }

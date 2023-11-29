@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 2324001362417246301, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 04a57725ed4829847b70dacbeb9024ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2324001362417246301, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_fontColor.b
       value: 0.47058824
@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 2324001362417246301, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 7078682352515999172, guid: 04a57725ed4829847b70dacbeb9024ee, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2324001362417246301, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4286087168
@@ -232,6 +232,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6330499909300645316, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000943830755059820, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdbe852f10eabd44cbf2300209a5b9f7, type: 3}
+    - target: {fileID: 7000943830755059820, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8107881840357633909, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
