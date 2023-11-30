@@ -283,7 +283,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 740323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &740323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,7 +1845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 190198139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &190198139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,7 +2113,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 214987429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonWing
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &214987429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,7 +2281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 222911812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 13
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &222911812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,6 +2369,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &253185488 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3748055757058163177, guid: b58191b50cc0a7e4ba105b87d7d4d30f, type: 3}
+  m_PrefabInstance: {fileID: 1066821577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4259cd9470d0e0243a6cd03d156a93f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &318101776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,7 +2993,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 334697640}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &334697640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4015,7 +4086,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 452327950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonWing
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &452327950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4309,7 +4392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 460075197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonWing
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &460075197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4430,7 +4525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 497404786}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &497404786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4562,7 +4669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 504336291}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &504336291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4980,7 +5099,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 530754299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &530754299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5111,7 +5242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550648743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &550648743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5321,7 +5464,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567353752}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &567353752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5744,7 +5899,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 613213163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonWing
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &613213163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,6 +6331,7 @@ GameObject:
   - component: {fileID: 645028309}
   - component: {fileID: 645028308}
   - component: {fileID: 645028307}
+  - component: {fileID: 645028311}
   m_Layer: 5
   m_Name: Cosmetics Menu Canvas
   m_TagString: Untagged
@@ -6261,6 +6429,47 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &645028311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645028306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc41d4a57aa5cec4b91b08d919715f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockCosmetics: 0
+  switchCosmetics: {fileID: 253185488}
+  headList:
+  - {fileID: 1324718543}
+  - {fileID: 2144043661}
+  - {fileID: 1160554153}
+  - {fileID: 530754298}
+  - {fileID: 550648742}
+  - {fileID: 190198138}
+  - {fileID: 740322}
+  - {fileID: 1645980302}
+  - {fileID: 1452254212}
+  - {fileID: 334697639}
+  - {fileID: 504336290}
+  - {fileID: 734264445}
+  - {fileID: 222911811}
+  bodyList:
+  - {fileID: 460075196}
+  - {fileID: 613213162}
+  - {fileID: 452327949}
+  - {fileID: 214987428}
+  - {fileID: 878490330}
+  trailList:
+  - {fileID: 1664094778}
+  - {fileID: 497404785}
+  - {fileID: 567353751}
+  - {fileID: 1100351076}
+  - {fileID: 1433279888}
+  - {fileID: 1237406173}
 --- !u!1001 &645703823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6562,6 +6771,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 813df34bc617e4f9f99977766fcf5eca, type: 3}
+--- !u!4 &648396080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+  m_PrefabInstance: {fileID: 1133663248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &649165188
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,7 +8038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734264446}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734264446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8945,7 +9171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878490331}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonWing
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &878490331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10849,7 +11087,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 199143306447339005, guid: b58191b50cc0a7e4ba105b87d7d4d30f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648396080}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58191b50cc0a7e4ba105b87d7d4d30f, type: 3}
 --- !u!1 &1069331895
@@ -11102,7 +11343,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1100351077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1100351077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11389,6 +11642,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3298799709484039333, guid: 32f7db205dd39f0468db1650f9ac701e, type: 3}
   m_PrefabInstance: {fileID: 1905415742}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1133663248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1868628443}
+    m_Modifications:
+    - target: {fileID: 674587733096216687, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_Name
+      value: Plankton (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 73.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.191606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030570203490319183, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032884477342658432, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032884477342658432, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032884477342658432, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
 --- !u!1001 &1134885011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11867,7 +12209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1160554154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1160554154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12464,7 +12818,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1237406174}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237406174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13718,7 +14084,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324718544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324718544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14585,7 +14963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1433279889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1433279889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14782,7 +15172,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1452254213}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1452254213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16566,7 +16968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645980303}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1645980303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16906,7 +17320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1664094779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonTrail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1664094779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18998,6 +19424,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864443462}
   m_CullTransparentMesh: 1
+--- !u!4 &1868628443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 199143306447339005, guid: b58191b50cc0a7e4ba105b87d7d4d30f, type: 3}
+  m_PrefabInstance: {fileID: 1066821577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1881218402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21963,7 +22394,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144043662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 645028311}
+        m_TargetAssemblyTypeName: SetCosmetics, Assembly-CSharp
+        m_MethodName: SetPlanktonHat
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2144043662
 MonoBehaviour:
   m_ObjectHideFlags: 0

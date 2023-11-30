@@ -8,6 +8,7 @@ using UnityEngine.AI;
 
 public class FocusingTarget : MonoBehaviour
 {
+    public int requiredPlanktonToWin = 0;
     [SerializeField] float pullingStrength = 1.0f;
     public float deathCooldownTimer;
     public AudioSource collectSound;
@@ -17,6 +18,7 @@ public class FocusingTarget : MonoBehaviour
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList = new List<PlanktonTracking>();
     [HideInInspector] public GameManager gameManager;
+    public PlanktonManager planktonManager; 
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
@@ -100,8 +102,9 @@ public class FocusingTarget : MonoBehaviour
         if (counterText != null) counterText.text = planktonAmount().ToString();
         if (gameManager != null) gameManager.TestWin();
 
-            Debug.Log("plankotn amount " + planktonAmount());
-        if (planktonAmount() <= 0)
+            Debug.Log("plankton amount " + planktonAmount());
+
+        if (planktonAmount() <= 0 || planktonManager.planktons.Count < requiredPlanktonToWin)
         {
             gameManager.LooseLevel();
         }
