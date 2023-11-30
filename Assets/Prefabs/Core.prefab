@@ -1173,11 +1173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.283485
+      value: 19.88
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -120.6606
+      value: -118.30997
       objectReference: {fileID: 0}
     - target: {fileID: 4646304314199814131, guid: 2a90e70c89ee5464ca51b77404545450, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1270,6 +1270,10 @@ PrefabInstance:
       propertyPath: counterText
       value: 
       objectReference: {fileID: 6290121427726590873}
+    - target: {fileID: 315301502515870209, guid: f59c0c9bb378dc3458a09cf8d1a88dae, type: 3}
+      propertyPath: planktonManager
+      value: 
+      objectReference: {fileID: 7659906233444342071}
     - target: {fileID: 2119959506778215885, guid: f59c0c9bb378dc3458a09cf8d1a88dae, type: 3}
       propertyPath: m_Name
       value: Player

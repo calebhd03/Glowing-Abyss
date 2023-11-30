@@ -15,10 +15,10 @@ public class FocusingTarget : MonoBehaviour
     public AudioSource deadSound;
 
     [Header("Refrences")]
+    public PlanktonManager planktonManager; 
     [SerializeField] TextMeshProUGUI counterText;
     [SerializeField] List<PlanktonTracking> planktonTrackingsList = new List<PlanktonTracking>();
     [HideInInspector] public GameManager gameManager;
-    public PlanktonManager planktonManager; 
     public UnityEvent m_MyEvent;
 
     public Transform targetingPoint;
