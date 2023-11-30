@@ -16,7 +16,7 @@ public class showWin : MonoBehaviour
     IEnumerator ShowUIAfter()
     {
         Debug.Log("Swapping Cameras");
-        yield return new WaitForSeconds(timeBetweenBlend);
+        yield return new WaitForSecondsRealtime(timeBetweenBlend);
 
         Debug.Log("Showing win UI");
         gameManager.ShowWinUI();
