@@ -1586,11 +1586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.38
+      value: -29.94
       objectReference: {fileID: 0}
     - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -197.64
+      value: -198.68
       objectReference: {fileID: 0}
     - target: {fileID: 3558596096338467380, guid: d3c40bc739330df46823f0b5697d36e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15230,6 +15230,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573874281}
     m_Modifications:
+    - target: {fileID: 454287928509053824, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: requiredPlankton
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1556218038647914828, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0.6639
@@ -15244,11 +15248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Size.x
-      value: 0.89766634
+      value: 0.4849244
       objectReference: {fileID: 0}
     - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Offset.x
-      value: -0.3425073
+      value: -0.24782659
       objectReference: {fileID: 0}
     - target: {fileID: 2456117420269365885, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Name
@@ -32678,6 +32682,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573874282}
     m_Modifications:
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1498784471}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Revived
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlanktonTracking, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189832143415087895, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
+      propertyPath: AfterPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5292134363800143200, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_Name
       value: SeaWeed2_illum (1)
@@ -32700,11 +32732,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.03
+      value: -43.95
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -278.64
+      value: -280.38
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32712,7 +32744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9505933
+      value: 0.9321543
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32724,7 +32756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.310439
+      value: 0.3620615
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32736,7 +32768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231719323797078287, guid: 37b65ade2afc2fe46b0c50cfed542fab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 36.171
+      value: 42.454
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46844,13 +46876,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573874281}
     m_Modifications:
+    - target: {fileID: 454287928509053824, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
+      propertyPath: requiredPlankton
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Size.x
-      value: 0.95664275
+      value: 0.5307896
       objectReference: {fileID: 0}
     - target: {fileID: 2383384717259782449, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Offset.x
-      value: -0.44456768
+      value: -0.21322523
       objectReference: {fileID: 0}
     - target: {fileID: 2456117420269365885, guid: e1c722fda526ffd40821f21daec68c26, type: 3}
       propertyPath: m_Name
