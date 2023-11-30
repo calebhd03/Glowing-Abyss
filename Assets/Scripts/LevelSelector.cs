@@ -11,6 +11,8 @@ public class LevelSelector : MonoBehaviour
     public GameObject Grid;
 
     public Button[] levelButtons;
+    public Button survivalButton;
+    public Button dlcButton;
 
     private void Start()
     {
@@ -41,5 +43,13 @@ public class LevelSelector : MonoBehaviour
         {
             levelButtons[i].interactable = false;
         }
+
+        //lock extra gamemodes until lvl 1 completed
+        if(PlayerPrefs.GetInt("levelReached", 1) <= 1)
+        {
+            survivalButton.interactable = false;
+            dlcButton.interactable = false;
+        }
+
     }
 }
