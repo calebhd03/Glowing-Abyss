@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 461459969119084621}
   - component: {fileID: 749649981539427923}
   m_Layer: 0
-  m_Name: trail candy corn
+  m_Name: trail 8bit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1479,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 1
+    tilesX: 5
     tilesY: 1
     animationType: 1
     rowIndex: 0
@@ -4777,7 +4777,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1feeaf2e680216546aa394d766fbb8eb, type: 2}
+  - {fileID: 2100000, guid: 795141c68a185ef4787b21cb03ca1f41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
