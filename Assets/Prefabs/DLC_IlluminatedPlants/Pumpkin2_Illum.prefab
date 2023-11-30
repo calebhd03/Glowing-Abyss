@@ -32,7 +32,7 @@ Transform:
   - {fileID: 3826620444961225075}
   - {fileID: 6052932811912993757}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3013431575946903122
 GameObject:
@@ -460,7 +460,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06055122, y: -0.15326868}
+  m_Offset: {x: -0.012121737, y: -0.04872261}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -471,7 +471,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19769774, y: 0.5269458}
+  m_Size: {x: 0.46367544, y: 0.3178537}
   m_EdgeRadius: 0
 --- !u!50 &4522938910013947147
 Rigidbody2D:
@@ -566,7 +566,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.94705963
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
