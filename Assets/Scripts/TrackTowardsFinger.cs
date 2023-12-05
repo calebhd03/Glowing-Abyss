@@ -27,6 +27,8 @@ public class TrackTowardsFinger : MonoBehaviour
         cam = Camera.main;
     }
 
+    //for PC build
+    /*
     public void OnTouchPosition(InputValue value)
     {
         Debug.Log(" co8cied " + clicked); 
@@ -51,10 +53,12 @@ public class TrackTowardsFinger : MonoBehaviour
     {
         interactButton.ButtonPressed();
     }
+    */
 
     public void Update()
     {
-        /*
+        
+        //Touch input
         dir = joystick.Direction;
         //Debug.Log("dir " + dir);
 
@@ -79,7 +83,7 @@ public class TrackTowardsFinger : MonoBehaviour
             }
 
         }
-        */
+        
         MovingSound();
 
     }
