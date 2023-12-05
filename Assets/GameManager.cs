@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     //TODO: Create an event that checks how many plankton are on player
     //TODO: Scene Fader
 
+    public bool survivalMode = false;
     public LevelRequirements levelRequirements;
     public FocusingTarget playerTracking;
     public GameObject IllumParentObj;
@@ -89,8 +90,18 @@ public class GameManager : MonoBehaviour
         Debug.LogWarning("Level Won!");
 
         GetComponent<PauseScript>().PauseGame();
-        if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
-            PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
+
+        if(!survivalMode)
+        {
+            if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("levelReached"))
+                PlayerPrefs.SetInt("levelReached", levelRequirements.levelNumber + 1);
+        }
+        else
+        {
+            if (levelRequirements.levelNumber >= PlayerPrefs.GetInt("dlcLevelReached"))
+                PlayerPrefs.SetInt("dlcLevelReached", levelRequirements.levelNumber + 1);
+        }
+
 
         SwitchToEndOfLevelCamera();
     }

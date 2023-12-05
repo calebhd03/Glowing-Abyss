@@ -37,6 +37,6 @@ public class InteractButton : MonoBehaviour
 
     public void ButtonPressed()
     {
-        interactButtonPressed.Invoke();
+        interactButtonPressed?.Invoke();
     }
 }

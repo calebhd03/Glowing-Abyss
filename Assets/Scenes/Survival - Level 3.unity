@@ -365,9 +365,13 @@ PrefabInstance:
       value: 226.4
       objectReference: {fileID: 0}
     - target: {fileID: 7087484465737435864, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
+      propertyPath: survivalMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087484465737435864, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: levelRequirements
       value: 
-      objectReference: {fileID: 11400000, guid: 7b236b3adafe1ec45b3f5d69f2f24b65, type: 2}
+      objectReference: {fileID: 11400000, guid: b9e8a80178ce78f4b818fb1836ac5186, type: 2}
     - target: {fileID: 7134341350042818670, guid: 47bd67298f36112409234df68d50c9fe, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 179.56
