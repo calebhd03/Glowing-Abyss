@@ -141,9 +141,10 @@ MonoBehaviour:
   joystick: {fileID: 0}
   movingSound: {fileID: 7460552991903731607}
   takingInput: 1
+  interactButton: {fileID: 0}
   layermask:
     serializedVersion: 2
-    m_Bits: 1854
+    m_Bits: 3646
 --- !u!114 &315301502515870209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,10 +157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428af6ae9ce9c304b9c07e6173dc52e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiredPlanktonToWin: 0
   pullingStrength: 0.15
   deathCooldownTimer: 1
   collectSound: {fileID: 2528130605788407942}
   deadSound: {fileID: 5916843065603034818}
+  planktonManager: {fileID: 0}
   counterText: {fileID: 0}
   planktonTrackingsList: []
   gameManager: {fileID: 0}

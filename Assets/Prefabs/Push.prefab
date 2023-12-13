@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4147283058250410128}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Push
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_Children:
   - {fileID: 5225561881691893086}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &433002953295130673
 PrefabInstance:
@@ -42,19 +42,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 249104573140642041, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3450548213549918319, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Name
       value: Pushable
       objectReference: {fileID: 0}
+    - target: {fileID: 3450548213549918319, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4431016344007147619, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4662747041367505126, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5658413649451605359, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_RootOrder

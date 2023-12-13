@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6819798252692171387}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: VineObstacle_Pushable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4057662833684646298}
     m_Modifications:
+    - target: {fileID: 361725163174978032, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3266899136934034244, guid: a35c8de200b546f4e98937055fde1206, type: 3}
       propertyPath: m_Name
       value: Vine_Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266899136934034244, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368242552475206613, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647355462872499617, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278307131932128338, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309326460749102634, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8109821296530756346, guid: a35c8de200b546f4e98937055fde1206, type: 3}
       propertyPath: m_RootOrder
@@ -96,6 +120,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 53.023
       objectReference: {fileID: 0}
+    - target: {fileID: 8175679542923665369, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960541035428752064, guid: a35c8de200b546f4e98937055fde1206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 249104573140642041, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2324001362417246301, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_margin.z
@@ -162,13 +194,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pushable
       objectReference: {fileID: 0}
+    - target: {fileID: 3450548213549918319, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4431016344007147619, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4662747041367505126, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4662747041367505126, guid: ce5d4aaca47ff457fb6bf8035e5e2206, type: 3}
       propertyPath: m_IsActive
